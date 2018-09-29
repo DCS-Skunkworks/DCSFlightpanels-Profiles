@@ -2,6 +2,8 @@
 
 Collection of Profiles for Flightpanels (DCS WORLD)
 
+-------------------------------------------------------------
+
 A-10C - by BlackLibrary (aka WarLord)
 
 F5-E - by BlackLibrary (aka WarLord)
@@ -19,6 +21,8 @@ Mi8 - by BaD CrC
 UH1-H - by BlackLibrary (aka WarLord)
 
 P-51-D - by pdmarsh
+
+-------------------------------------------------------------
 
 Put these files in a Folder and open it in DCS-Flightpanels.
 
