@@ -20,7 +20,7 @@ UH1-H - by BlackLibrary (aka WarLord)
 
 P-51-D - by pdmarsh
 
-Put these files in a Folder you can find and open in DCS-Flightpanels :)
+Put these files in a Folder and open it in DCS-Flightpanels.
 
 Before use, open the files with a text editor and change PanelInstanceID= to your IDs
 
