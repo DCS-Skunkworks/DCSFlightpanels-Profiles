@@ -1,5 +1,5 @@
 #This file can be manually edited using any ASCII editor.
-#File created on 05.09.2018 00:00:00 05.09.2018 19:52:14#
+#File created on 03.10.2018 00:00:00 03.10.2018 18:32:47#
 #
 #IMPORTANT INFO REGARDING the keyboard key AltGr (RAlt as named in DCS) or RMENU as named DCSFP
 #When you press AltGr DCSFP will register RMENU + LCONTROL. This is a bug which "just is". You need to modify that in the profile
@@ -9,7 +9,6 @@
 
 #  ***Do not change the location nor content of the line below***
 Airframe=F5E
-
 
 PanelType=PZ55SwitchPanel
 PanelInstanceID=\\?\hid#vid_06a3&pid_0d67#8&2612a448&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}
@@ -43,8 +42,8 @@ BeginPanel
 	SwitchPanelDCSBIOSControl{0SWITCHKEY_LIGHTS_PANEL|Lights OFF}\o/\o/DCSBIOSInput{ARM_LIGHTS|SET_STATE|0|0}\o/DCSBIOSInput{CONSOLE_LIGHTS|SET_STATE|0|0}\o/DCSBIOSInput{ENGINE_LIGHTS|SET_STATE|0|0}\o/DCSBIOSInput{FLIGHT_LIGHTS|SET_STATE|0|0}
 	SwitchPanelDCSBIOSControl{1SWITCHKEY_LIGHTS_NAV|NAV Lights ON}\o/\o/DCSBIOSInput{NAV_LIGHTS|SET_STATE|65535|0}
 	SwitchPanelDCSBIOSControl{0SWITCHKEY_LIGHTS_NAV|NAV Lights OFF}\o/\o/DCSBIOSInput{NAV_LIGHTS|SET_STATE|0|0}
-	SwitchPanelDCSBIOSControl{1SWITCHKEY_AVIONICS_MASTER|Radar ON}\o/\o/DCSBIOSInput{RADAR_MODE|SET_STATE|2|0}
-	SwitchPanelDCSBIOSControl{0SWITCHKEY_AVIONICS_MASTER|Radar OFF}\o/\o/DCSBIOSInput{RADAR_MODE|SET_STATE|0|0}
+	SwitchPanelDCSBIOSControl{1SWITCHKEY_AVIONICS_MASTER|Damper,Radar ON}\o/\o/DCSBIOSInput{PITCH_DAMPER|SET_STATE|1|0}\o/DCSBIOSInput{YAW_DAMPER|SET_STATE|1|0}\o/DCSBIOSInput{RADAR_MODE|SET_STATE|2|0}
+	SwitchPanelDCSBIOSControl{0SWITCHKEY_AVIONICS_MASTER|Damper,Radar OFF}\o/\o/DCSBIOSInput{PITCH_DAMPER|SET_STATE|0|0}\o/DCSBIOSInput{YAW_DAMPER|SET_STATE|0|0}\o/DCSBIOSInput{RADAR_MODE|SET_STATE|0|0}
 	SwitchPanelDCSBIOSControl{1SWITCHKEY_LIGHTS_STROBE|Formation Lights ON}\o/\o/DCSBIOSInput{FORMATION_LIGHTS|SET_STATE|65535|0}
 	SwitchPanelDCSBIOSControl{0SWITCHKEY_LIGHTS_STROBE|Formation Lights OFF}\o/\o/DCSBIOSInput{FORMATION_LIGHTS|SET_STATE|0|0}
 	SwitchPanelLedUp{DARK|DCSBiosOutput{NOSE_LIGHT|Equals|0}}
