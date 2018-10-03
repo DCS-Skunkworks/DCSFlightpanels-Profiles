@@ -1,5 +1,5 @@
 #This file can be manually edited using any ASCII editor.
-#File created on 03.10.2018 00:00:00 03.10.2018 18:50:23#
+#File created on 03.10.2018 00:00:00 03.10.2018 19:13:04#
 #
 #IMPORTANT INFO REGARDING the keyboard key AltGr (RAlt as named in DCS) or RMENU as named DCSFP
 #When you press AltGr DCSFP will register RMENU + LCONTROL. This is a bug which "just is". You need to modify that in the profile
@@ -43,7 +43,7 @@ BeginPanel
 	SwitchPanelDCSBIOSControl{1KNOB_ENGINE_RIGHT|Jammer Control STBY}\o/\o/DCSBIOSInput{JAMMER_CONTROL|SET_STATE|1|0}
 	SwitchPanelDCSBIOSControl{1KNOB_ENGINE_LEFT|Jammer Control BIT}\o/\o/DCSBIOSInput{JAMMER_CONTROL|SET_STATE|2|0}
 	SwitchPanelDCSBIOSControl{1KNOB_ENGINE_BOTH|Jammer Control RCV}\o/\o/DCSBIOSInput{JAMMER_CONTROL|SET_STATE|3|0}
-	SwitchPanelDCSBIOSControl{1KNOB_ENGINE_START|Jammer Control RPT}\o/\o/DCSBIOSInput{JAMMER_CONTROL|SET_STATE|3|0}
+	SwitchPanelDCSBIOSControl{1KNOB_ENGINE_START|Jammer Control RPT}\o/\o/DCSBIOSInput{JAMMER_CONTROL|SET_STATE|4|0}
 	SwitchPanelDCSBIOSControl{1SWITCHKEY_DE_ICE|FLIR ON}\o/\o/DCSBIOSInput{FLIR|SET_STATE|1|0}
 	SwitchPanelDCSBIOSControl{0SWITCHKEY_DE_ICE|FLIR OFF}\o/\o/DCSBIOSInput{FLIR|SET_STATE|0|0}
 	ManualLandingGearLEDs{True}
