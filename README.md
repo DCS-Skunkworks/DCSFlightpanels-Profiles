@@ -39,5 +39,7 @@ PanelInstanceID=\\?\xyzxyzxyzxyzxyzxyzxyzxyzxyzxyzxyzxyzxyzxyzxy
 
 
 https://github.com/ciribob/DCS-SimpleRadioStandalone
+
 https://github.com/DCSFlightpanels/DCSFlightpanels
+
 https://github.com/DCSFlightpanels/dcs-bios
