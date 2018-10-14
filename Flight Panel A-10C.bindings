@@ -1,5 +1,5 @@
 #This file can be manually edited using any ASCII editor.
-#File created on 11.08.2018 00:00:00 11.08.2018 17:23:53#
+#File created on 14.10.2018 00:00:00 14.10.2018 17:41:23#
 #
 #IMPORTANT INFO REGARDING the keyboard key AltGr (RAlt as named in DCS) or RMENU as named DCSFP
 #When you press AltGr DCSFP will register RMENU + LCONTROL. This is a bug which "just is". You need to modify that in the profile
@@ -68,7 +68,7 @@ BeginPanel
 	MultiPanelDCSBIOSControl{ALT}\o/{1FLAPS_LEVER_UP|Refuel Close}\o/\o/DCSBIOSInput{FSCP_RCVR_LEVER|SET_STATE|1|0}
 	MultiPanelDCSBIOSControl{ALT}\o/{1FLAPS_LEVER_DOWN|Refuel Open}\o/\o/DCSBIOSInput{FSCP_RCVR_LEVER|SET_STATE|0|0}
 	MultiPanelDCSBIOSControl{ALT}\o/{0AUTO_THROTTLE|MasterArm Safe}\o/\o/DCSBIOSInput{AHCP_GUNPAC|SET_STATE|1|0}\o/DCSBIOSInput{AHCP_MASTER_ARM|SET_STATE|1|0}
-	MultiPanelDCSBIOSControl{ALT}\o/{1AUTO_THROTTLE|MasterArm Arm}\o/\o/DCSBIOSInput{AHCP_MASTER_ARM|SET_STATE|2|0}
+	MultiPanelDCSBIOSControl{ALT}\o/{1AUTO_THROTTLE|MasterArm Arm}\o/\o/DCSBIOSInput{AHCP_MASTER_ARM|SET_STATE|2|0}\o/DCSBIOSInput{AHCP_GUNPAC|SET_STATE|2|0}
 	MultiPanelDCSBIOSControl{ALT}\o/{1LCD_WHEEL_DEC|Cockpit Lights +}\o/\o/DCSBIOSInput{LCP_ENG_INST|VARIABLE_STEP|-1500|0}\o/DCSBIOSInput{LCP_FLIGHT_INST|VARIABLE_STEP|-1500|0}\o/DCSBIOSInput{LCP_AUX_INST|VARIABLE_STEP|-1500|0}
 	MultiPanelDCSBIOSControl{ALT}\o/{1LCD_WHEEL_INC|Cockpit Lights -}\o/\o/DCSBIOSInput{LCP_FLIGHT_INST|VARIABLE_STEP|1500|0}\o/DCSBIOSInput{LCP_AUX_INST|VARIABLE_STEP|1500|0}\o/DCSBIOSInput{LCP_ENG_INST|VARIABLE_STEP|1500|0}
 	MultiPanelDCSBIOSControl{ALT}\o/{1PITCH_TRIM_WHEEL_UP|Yaw Trim (Rudder) L}\o/\o/DCSBIOSInput{SASP_YAW_TRIM|VARIABLE_STEP|1500|0}
