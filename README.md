@@ -16,6 +16,8 @@ Ka50 - by Capt Zeen
 
 L39ZA - by BlackLibrary (aka WarLord)
 
+L39C - by lizelong952 
+
 Mi8 - by BaD CrC
 
 UH1-H - by BlackLibrary (aka WarLord)
