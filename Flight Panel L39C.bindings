@@ -1,0 +1,50 @@
+#This file can be manually edited using any ASCII editor.
+#File created on 2018/6/18 0:00:00 2018/6/18 11:35:15#
+
+#IMPORTANT INFO REGARDING the keyboard key AltGr (RAlt as named in DCS) or RMENU as named DCSFP
+#When you press AltGr DCSFP will register RMENU + LCONTROL. This is a bug which "just is". You need to modify that in the profile
+#by deleting the + LCONTROL part.
+#So for example AltGr + HOME pressed on the keyboard becomes RMENU + LCONTROL + HOME
+#Open text editor and delete the LCONTROL ==> RMENU + HOME
+
+Do not change the location nor content of the line below
+Airframe=KEYEMULATOR
+
+PanelType=PZ55SwitchPanel
+PanelInstanceID=\?\hid#vid_06a3&pid_0d67#7&34f88ee&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}
+PanelSettingsVersion=0X
+BeginPanel
+SwitchPanelKey{1LEVER_GEAR_DOWN}\o/OSKeyPress{FiftyMilliSec,LSHIFT + VK_G}
+SwitchPanelKey{1LEVER_GEAR_UP}\o/OSKeyPress{FiftyMilliSec,LCONTROL + VK_G}
+SwitchPanelKey{1SWITCHKEY_AVIONICS_MASTER}\o/OSKeyPress{FiftyMilliSec,RSHIFT + VK_3}
+SwitchPanelKey{1SWITCHKEY_FUEL_PUMP}\o/OSKeyPress{FiftyMilliSec,RSHIFT + VK_4}
+SwitchPanelKey{1SWITCHKEY_MASTER_BAT}\o/OSKeyPress{FiftyMilliSec,RSHIFT + VK_1}
+SwitchPanelKey{0SWITCHKEY_MASTER_BAT}\o/OSKeyPress{FiftyMilliSec,RSHIFT + F1}
+SwitchPanelKey{1SWITCHKEY_MASTER_ALT}\o/OSKeyPress{FiftyMilliSec,RSHIFT + VK_2}
+SwitchPanelKey{0SWITCHKEY_MASTER_ALT}\o/OSKeyPress{FiftyMilliSec,RSHIFT + F2}
+SwitchPanelKey{0SWITCHKEY_AVIONICS_MASTER}\o/OSKeyPress{FiftyMilliSec,RSHIFT + F3}
+SwitchPanelKey{0SWITCHKEY_FUEL_PUMP}\o/OSKeyPress{FiftyMilliSec,RSHIFT + F4}
+SwitchPanelKey{1SWITCHKEY_DE_ICE}\o/OSKeyPress{FiftyMilliSec,RCONTROL + VK_3}
+SwitchPanelKey{0SWITCHKEY_DE_ICE}\o/OSKeyPress{FiftyMilliSec,RCONTROL + F3}
+SwitchPanelKey{1KNOB_ENGINE_RIGHT}\o/OSKeyPress{FiftyMilliSec,RCONTROL + VK_1}
+SwitchPanelKey{1KNOB_ENGINE_LEFT}\o/OSKeyPress{FiftyMilliSec,RCONTROL + VK_2}
+SwitchPanelKey{1KNOB_ENGINE_BOTH}\o/OSKeyPress{FiftyMilliSec,RSHIFT + F6}
+SwitchPanelKey{1KNOB_ENGINE_START}\o/OSKeyPress{FiftyMilliSec,RCONTROL + VK_5}
+SwitchPanelKey{1SWITCHKEY_PITOT_HEAT}\o/OSKeyPress{FiftyMilliSec,RSHIFT + VK_5}
+SwitchPanelKey{0SWITCHKEY_PITOT_HEAT}\o/OSKeyPress{FiftyMilliSec,RSHIFT + F5}
+SwitchPanelKey{0SWITCHKEY_CLOSE_COWL}\o/OSKeyPress{FiftyMilliSec,LSHIFT + VK_5}
+SwitchPanelKey{1SWITCHKEY_CLOSE_COWL}\o/OSKeyPress{FiftyMilliSec,LSHIFT + F5}
+SwitchPanelKey{1SWITCHKEY_LIGHTS_PANEL}\o/OSKeyPress{FiftyMilliSec,LSHIFT + VK_7}
+SwitchPanelKey{0SWITCHKEY_LIGHTS_PANEL}\o/OSKeyPress{FiftyMilliSec,LCONTROL + VK_7}
+SwitchPanelKey{1SWITCHKEY_LIGHTS_LANDING}\o/OSKeyPress{FiftyMilliSec,RCONTROL + VK_4}
+SwitchPanelKey{0SWITCHKEY_LIGHTS_LANDING}\o/OSKeyPress{FiftyMilliSec,RCONTROL + F4}
+SwitchPanelKey{1SWITCHKEY_LIGHTS_TAXI}\o/OSKeyPress{FiftyMilliSec,RSHIFT + F7}
+SwitchPanelKey{0SWITCHKEY_LIGHTS_TAXI}\o/OSKeyPress{FiftyMilliSec,RSHIFT + F8}
+SwitchPanelKey{1SWITCHKEY_LIGHTS_BEACON}\o/OSKeyPress{FiftyMilliSec,LSHIFT + VK_6}
+SwitchPanelKey{0SWITCHKEY_LIGHTS_BEACON}\o/OSKeyPress{FiftyMilliSec,LCONTROL + VK_6}
+SwitchPanelKey{1SWITCHKEY_LIGHTS_NAV}\o/OSKeyPress{FiftyMilliSec,LSHIFT + VK_8}
+SwitchPanelKey{0SWITCHKEY_LIGHTS_NAV}\o/OSKeyPress{FiftyMilliSec,LCONTROL + VK_8}
+SwitchPanelKey{1SWITCHKEY_LIGHTS_STROBE}\o/OSKeyPress{FiftyMilliSec,LSHIFT + VK_9}
+SwitchPanelKey{0SWITCHKEY_LIGHTS_STROBE}\o/OSKeyPress{FiftyMilliSec,LCONTROL + VK_9}
+ManualLandingGearLEDs{True}
+EndPanel
