@@ -13,7 +13,8 @@ Planes included:
 * Ka50
 * L39ZA
 * L39C 
-* Mi8 
+* Mi8
+* Mig-21
 * P-51-D
 * UH1-H
 
