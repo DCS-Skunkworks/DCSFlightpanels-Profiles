@@ -19,6 +19,7 @@ Planes included:
 * UH1-H
 
 Contributors: BlackLibrary (aka WarLord), pdmarsh, Capt Zeen, BaD CrC, ron533, lizelong952
+
 -------------------------------------------------------------
 
 Put these files in a Folder and open it in DCS-Flightpanels.
