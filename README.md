@@ -1,29 +1,23 @@
 # DCS-FlighPanel-Profiles
 
 Collection of Profiles for Flightpanels (DCS WORLD)
-
 -------------------------------------------------------------
+Planes included:
 
-A-10C - by BlackLibrary (aka WarLord)
+* A-10C
+* AV8BNA
+* F/A-18C
+* F5-E 
+* FC3 (F-15) - (optimized for F-15 works with all FC3)
+* FC3 (F-15)+SRS - (optimized for F-15 works with all FC3) DCS-SimpleRadioStandalone
+* Ka50
+* L39ZA
+* L39C 
+* Mi8 
+* P-51-D
+* UH1-H
 
-F5-E - by BlackLibrary (aka WarLord)
-
-FC3 (F-15) - by BlackLibrary (aka WarLord) (optimized for F-15 works with all FC3)
-
-FC3 (F-15)+SRS - by BlackLibrary (aka WarLord) (optimized for F-15 works with all FC3) DCS-SimpleRadioStandalone
-
-Ka50 - by Capt Zeen
-
-L39ZA - by BlackLibrary (aka WarLord)
-
-L39C - by lizelong952 
-
-Mi8 - by BaD CrC
-
-UH1-H - by BlackLibrary (aka WarLord)
-
-P-51-D - by pdmarsh
-
+Contributors: BlackLibrary (aka WarLord), pdmarsh, Capt Zeen, BaD CrC, ron533, lizelong952
 -------------------------------------------------------------
 
 Put these files in a Folder and open it in DCS-Flightpanels.
