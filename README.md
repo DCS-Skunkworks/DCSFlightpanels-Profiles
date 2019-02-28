@@ -8,7 +8,6 @@ Planes included:
 * AV8BNA
 * F/A-18C
 * F5-E 
-* FC3 (F-15) - (optimized for F-15 works with all FC3)
 * FC3 (F-15)+SRS - (optimized for F-15 works with all FC3) DCS-SimpleRadioStandalone
 * Ka50
 * L39ZA
