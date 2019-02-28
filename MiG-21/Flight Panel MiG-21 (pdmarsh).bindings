@@ -1,0 +1,295 @@
+#This file can be manually edited using any ASCII editor.
+#File created on 4/19/2015 12:00:00 AM 4/19/2015 3:47:21 PM
+#  ***Do not change the location nor content of the line below***
+Airframe=Mig21Bis
+
+
+PanelType=PZ55SwitchPanel
+PanelInstanceID=\\?\hid#vid_06a3&pid_0d67#7&2e3b65ed&1&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}
+BeginPanel
+	SwitchPanelDCSBIOSControl{1KNOB_ENGINE_RIGHT|Weapon Select 7}\o/\o/DCSBIOSInput{WPN_SEL|SET_STATE|7}
+	SwitchPanelDCSBIOSControl{1KNOB_ENGINE_LEFT|Weapon Select 8}\o/\o/DCSBIOSInput{WPN_SEL|SET_STATE|8}
+	SwitchPanelDCSBIOSControl{1KNOB_ENGINE_BOTH|Weapon Select 9}\o/\o/DCSBIOSInput{WPN_SEL|SET_STATE|9}
+	SwitchPanelDCSBIOSControl{1KNOB_ENGINE_START|Weapon Select 10}\o/\o/DCSBIOSInput{WPN_SEL|SET_STATE|10}
+	SwitchPanelDCSBIOSControl{1SWITCHKEY_MASTER_BAT|Bat/Inv/DC Gen On}\o/\o/DCSBIOSInput{PO7501|SET_STATE|1}\o/DCSBIOSInput{PO7502|SET_STATE|1}\o/DCSBIOSInput{BAT_HTR|SET_STATE|1}\o/DCSBIOSInput{BAT_PWR|SET_STATE|1}\o/DCSBIOSInput{DC_GEN|SET_STATE|1}
+	SwitchPanelDCSBIOSControl{1SWITCHKEY_AVIONICS_MASTER|Radio On}\o/\o/DCSBIOSInput{RAD_PWR|SET_STATE|1}
+	SwitchPanelDCSBIOSControl{0SWITCHKEY_AVIONICS_MASTER|Radio Off}\o/\o/DCSBIOSInput{RAD_PWR|SET_STATE|0}
+	SwitchPanelDCSBIOSControl{1SWITCHKEY_FUEL_PUMP|Fuel Pumps On}\o/\o/DCSBIOSInput{PUMP_GR1|SET_STATE|1}\o/DCSBIOSInput{PUMP_GR3|SET_STATE|1}\o/DCSBIOSInput{DRN_PUMP|SET_STATE|1}
+	SwitchPanelDCSBIOSControl{0SWITCHKEY_FUEL_PUMP|Fuel Pumps Off}\o/\o/DCSBIOSInput{PUMP_GR1|SET_STATE|0}\o/DCSBIOSInput{PUMP_GR3|SET_STATE|0}\o/DCSBIOSInput{DRN_PUMP|SET_STATE|0}
+	SwitchPanelDCSBIOSControl{1SWITCHKEY_DE_ICE|Gyros On}\o/\o/DCSBIOSInput{GYRO_1|SET_STATE|1}\o/DCSBIOSInput{GYRO_2|SET_STATE|1}
+	SwitchPanelDCSBIOSControl{0SWITCHKEY_DE_ICE|Gyros Off}\o/\o/DCSBIOSInput{GYRO_1|SET_STATE|0}\o/DCSBIOSInput{GYRO_2|SET_STATE|0}
+	SwitchPanelDCSBIOSControl{1SWITCHKEY_MASTER_ALT|AC Gen Power On}\o/\o/DCSBIOSInput{AC_GEN|SET_STATE|1}
+	SwitchPanelDCSBIOSControl{0SWITCHKEY_MASTER_ALT|AC Gen Power Off}\o/\o/DCSBIOSInput{AC_GEN|SET_STATE|0}
+	SwitchPanelDCSBIOSControl{1LEVER_GEAR_DOWN|Gear Down}\o/\o/DCSBIOSInput{GEAR_LVR|SET_STATE|0}
+	SwitchPanelDCSBIOSControl{1LEVER_GEAR_UP|Gear Up}\o/\o/DCSBIOSInput{GEAR_LVR|SET_STATE|2}
+	SwitchPanelDCSBIOSControl{0SWITCHKEY_CLOSE_COWL|Trim/Hyd/Cone On}\o/\o/DCSBIOSInput{TRM_PWR|SET_STATE|1}\o/DCSBIOSInput{EMR_HYD_PUMP|SET_STATE|1}\o/DCSBIOSInput{CONE_PWR|SET_STATE|1}
+	SwitchPanelDCSBIOSControl{1SWITCHKEY_CLOSE_COWL|Trim/Hyd/Cone Off}\o/\o/DCSBIOSInput{TRM_PWR|SET_STATE|0}\o/DCSBIOSInput{EMR_HYD_PUMP|SET_STATE|0}\o/DCSBIOSInput{CONE_PWR|SET_STATE|0}
+	SwitchPanelDCSBIOSControl{1SWITCHKEY_LIGHTS_PANEL|SPO/IFF/SRZO On}\o/\o/DCSBIOSInput{SPO_PWR|SET_STATE|1}\o/DCSBIOSInput{SOD_PWR|SET_STATE|1}\o/DCSBIOSInput{SRZO_81_PWR|SET_STATE|1}\o/DCSBIOSInput{SRZO_PWR|SET_STATE|1}
+	SwitchPanelDCSBIOSControl{0SWITCHKEY_LIGHTS_PANEL|SPO/IFF/SRZO Off}\o/\o/DCSBIOSInput{SPO_PWR|SET_STATE|0}\o/DCSBIOSInput{SOD_PWR|SET_STATE|0}\o/DCSBIOSInput{SRZO_81_PWR|SET_STATE|0}\o/DCSBIOSInput{SRZO_PWR|SET_STATE|0}
+	SwitchPanelDCSBIOSControl{1SWITCHKEY_LIGHTS_BEACON|Weapons Systems On}\o/\o/DCSBIOSInput{MSL_HEAT|SET_STATE|1}\o/DCSBIOSInput{MSL_LNCH|SET_STATE|1}\o/DCSBIOSInput{INB_PYL_PWR|SET_STATE|1}\o/DCSBIOSInput{OBD_PYL_PWR|SET_STATE|1}\o/DCSBIOSInput{GUN_PWR|SET_STATE|1}\o/DCSBIOSInput{SIGHT_PWR|SET_STATE|1}\o/DCSBIOSInput{MODE_AA_AG|SET_STATE|0}
+	SwitchPanelDCSBIOSControl{0SWITCHKEY_LIGHTS_BEACON|Weapons Systems Off}\o/\o/DCSBIOSInput{MSL_HEAT|SET_STATE|0}\o/DCSBIOSInput{MSL_LNCH|SET_STATE|0}\o/DCSBIOSInput{INB_PYL_PWR|SET_STATE|0}\o/DCSBIOSInput{OBD_PYL_PWR|SET_STATE|0}\o/DCSBIOSInput{GUN_PWR|SET_STATE|0}\o/DCSBIOSInput{SIGHT_PWR|SET_STATE|0}\o/DCSBIOSInput{MODE_AA_AG|SET_STATE|1}
+	SwitchPanelDCSBIOSControl{0SWITCHKEY_MASTER_BAT|Bat/Inv/DC Gen Off}\o/\o/DCSBIOSInput{PO7501|SET_STATE|0}\o/DCSBIOSInput{PO7502|SET_STATE|0}\o/DCSBIOSInput{BAT_HTR|SET_STATE|0}\o/DCSBIOSInput{BAT_PWR|SET_STATE|0}\o/DCSBIOSInput{DC_GEN|SET_STATE|0}
+	SwitchPanelDCSBIOSControl{1SWITCHKEY_LIGHTS_NAV|Nav Lights On}\o/\o/DCSBIOSInput{NAV_LIGHTS|SET_STATE|3}
+	SwitchPanelDCSBIOSControl{0SWITCHKEY_LIGHTS_NAV|Nav Lights Off}\o/\o/DCSBIOSInput{NAV_LIGHTS|SET_STATE|0}
+	SwitchPanelDCSBIOSControl{1SWITCHKEY_LIGHTS_LANDING|Gear Unlock}\o/\o/DCSBIOSInput{GEAR_LOCK|SET_STATE|1}
+	SwitchPanelDCSBIOSControl{0SWITCHKEY_LIGHTS_LANDING|Gear Lock}\o/\o/DCSBIOSInput{GEAR_LOCK|SET_STATE|0}
+	SwitchPanelDCSBIOSControl{1SWITCHKEY_LIGHTS_STROBE|Taxi Lights On}\o/\o/DCSBIOSInput{LND_LIGHT|SET_STATE|1}
+	SwitchPanelDCSBIOSControl{0SWITCHKEY_LIGHTS_STROBE|Taxi Lights Off}\o/\o/DCSBIOSInput{LND_LIGHT|SET_STATE|0}
+	SwitchPanelDCSBIOSControl{1SWITCHKEY_LIGHTS_TAXI|Landing Lights On}\o/\o/DCSBIOSInput{LND_LIGHT|SET_STATE|2}
+	SwitchPanelDCSBIOSControl{0SWITCHKEY_LIGHTS_TAXI|Landing Lights Off}\o/\o/DCSBIOSInput{LND_LIGHT|SET_STATE|0}
+	SwitchPanelDCSBIOSControl{1SWITCHKEY_PITOT_HEAT|Drag Chute Release}\o/\o/DCSBIOSInput{CHUTE_REL|SET_STATE|1}\o/DCSBIOSInput{CHUTE_DROP_CVR|SET_STATE|1}
+	SwitchPanelDCSBIOSControl{0SWITCHKEY_PITOT_HEAT|Drag Chute Drop}\o/\o/DCSBIOSInput{CHUTE_DROP|SET_STATE|1}
+	SwitchPanelLedUp{GREEN|DCSBiosOutput{GEAR_LVR|Equals|0}}
+	SwitchPanelLedUp{RED|DCSBiosOutput{GEAR_LVR|Equals|2}}
+	SwitchPanelLedUp{DARK|DCSBiosOutput{GEAR_LVR|Equals|1}}
+	SwitchPanelLedLeft{GREEN|DCSBiosOutput{GEAR_LVR|Equals|0}}
+	SwitchPanelLedLeft{RED|DCSBiosOutput{GEAR_LVR|Equals|2}}
+	SwitchPanelLedLeft{DARK|DCSBiosOutput{GEAR_LVR|Equals|1}}
+	SwitchPanelLedRight{GREEN|DCSBiosOutput{GEAR_LVR|Equals|0}}
+	SwitchPanelLedRight{RED|DCSBiosOutput{GEAR_LVR|Equals|2}}
+	SwitchPanelLedRight{DARK|DCSBiosOutput{GEAR_LVR|Equals|1}}
+EndPanel
+
+
+PanelType=PZ70MultiPanel
+PanelInstanceID=\\?\hid#vid_06a3&pid_0d06#9&16854338&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}
+BeginPanel
+	MultiPanelKnob{1FLAPS_LEVER_UP}\o/OSKeyPress{FiftyMilliSec,LSHIFT + VK_F}
+	MultiPanelKnob{1FLAPS_LEVER_DOWN}\o/OSKeyPress{FiftyMilliSec,VK_F}
+	MultiPanelDCSBIOSControlLCD{KNOB_ALT|UpperALT}\o/DCSBiosOutput{ALT_MSL_FT|Equals|0}
+	MultiPanelDCSBIOSControlLCD{KNOB_ALT|LowerALT}\o/DCSBiosOutput{HDG_DEG|Equals|0}
+EndPanel
+
+
+PanelType=BackLitPanel
+PanelInstanceID=\\?\hid#vid_06a3&pid_0b4e#9&1c05bf1&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}
+BeginPanel
+	PanelBIP{Position_1_1|GREEN|DCSBiosOutput{BAT_PWR|Equals|1}}
+	PanelBIP{Position_1_1|DARK|DCSBiosOutput{BAT_PWR|Equals|0}}
+	PanelBIP{Position_2_1|GREEN|DCSBiosOutput{PO7501|Equals|1}}
+	PanelBIP{Position_2_1|DARK|DCSBiosOutput{PO7501|Equals|0}}
+	PanelBIP{Position_1_3|GREEN|DCSBiosOutput{NAV_LIGHTS|Equals|3}}
+	PanelBIP{Position_1_3|DARK|DCSBiosOutput{NAV_LIGHTS|Equals|0}}
+	PanelBIP{Position_1_4|RED|DCSBiosOutput{MASTER_CAUTION|Equals|1}}
+	PanelBIP{Position_1_4|DARK|DCSBiosOutput{MASTER_CAUTION|Equals|0}}
+	PanelBIP{Position_1_5|RED|DCSBiosOutput{FIRE_LIGHT|Equals|1}}
+	PanelBIP{Position_1_5|DARK|DCSBiosOutput{FIRE_LIGHT|Equals|0}}
+	PanelBIP{Position_2_5|YELLOW|DCSBiosOutput{FUEL_1GR|Equals|1}}
+	PanelBIP{Position_2_5|DARK|DCSBiosOutput{FUEL_1GR|Equals|0}}
+	PanelBIP{Position_2_6|YELLOW|DCSBiosOutput{FUEL_3GR|Equals|1}}
+	PanelBIP{Position_2_6|DARK|DCSBiosOutput{FUEL_3GR|Equals|0}}
+	PanelBIP{Position_1_7|GREEN|DCSBiosOutput{FLAPS_NEUT|Equals|1}}
+	PanelBIP{Position_1_7|DARK|DCSBiosOutput{FLAPS_NEUT|Equals|0}}
+	PanelBIP{Position_2_7|GREEN|DCSBiosOutput{FLAPS_TO|Equals|1}}
+	PanelBIP{Position_2_7|DARK|DCSBiosOutput{FLAPS_TO|Equals|0}}
+	PanelBIP{Position_3_7|GREEN|DCSBiosOutput{FLAPS_LDG|Equals|1}}
+	PanelBIP{Position_3_7|DARK|DCSBiosOutput{FLAPS_LDG|Equals|0}}
+	PanelBIP{Position_2_3|GREEN|DCSBiosOutput{LND_LIGHT|Equals|2}}
+	PanelBIP{Position_2_3|DARK|DCSBiosOutput{LND_LIGHT|Equals|0}}
+	PanelBIP{Position_3_3|GREEN|DCSBiosOutput{LND_LIGHT|Equals|1}}
+	PanelBIP{Position_3_3|DARK|DCSBiosOutput{LND_LIGHT|Equals|0}}
+EndPanel
+
+
+PanelType=TPM
+PanelInstanceID=\\?\hid#vid_06a3&pid_0b4d#7&30b328f&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}
+BeginPanel
+	TPMPanelSwitch{1G9}\o/OSKeyPress{INFORMATION=^Key press sequence^[HalfSecond,RCONTROL + VK_C,HalfSecond][HalfSecond,LSHIFT + VK_C,HalfSecond][HalfSecond,LMENU + VK_C,HalfSecond]}
+	TPMPanelSwitch{0G9}\o/OSKeyPress{INFORMATION=^Key press sequence^[HalfSecond,LMENU + LCONTROL + VK_C,HalfSecond][HalfSecond,LCONTROL + LSHIFT + VK_C,HalfSecond][HalfSecond,RMENU + RCONTROL + VK_C,HalfSecond]}
+	TPMPanelDCSBIOSControl{1G1|Fire Ext Off}\o/\o/DCSBIOSInput{FIRE_EXT_PWR|SET_STATE|0}
+	TPMPanelDCSBIOSControl{0G1|Fire Ext On}\o/\o/DCSBIOSInput{FIRE_EXT_PWR|SET_STATE|1}
+	TPMPanelDCSBIOSControl{1G2|Flight Data Rec Off}\o/\o/DCSBIOSInput{FLT_DTA_REC|SET_STATE|0}
+	TPMPanelDCSBIOSControl{0G2|Flight Data Rec On}\o/\o/DCSBIOSInput{FLT_DTA_REC|SET_STATE|1}
+	TPMPanelDCSBIOSControl{1G3|ARC Off}\o/\o/DCSBIOSInput{ARC_PWR|SET_STATE|0}
+	TPMPanelDCSBIOSControl{0G3|ARC On}\o/\o/DCSBIOSInput{ARC_PWR|SET_STATE|1}
+	TPMPanelDCSBIOSControl{1G4|Radio Alt Off}\o/\o/DCSBIOSInput{RALT_PWR|SET_STATE|0}
+	TPMPanelDCSBIOSControl{0G4|Radio Alt On}\o/\o/DCSBIOSInput{RALT_PWR|SET_STATE|1}
+	TPMPanelDCSBIOSControl{1G5|RSBN Off}\o/\o/DCSBIOSInput{RSBN_PWR|SET_STATE|0}
+	TPMPanelDCSBIOSControl{0G5|RSBN On}\o/\o/DCSBIOSInput{RSBN_PWR|SET_STATE|1}
+	TPMPanelDCSBIOSControl{1G6|ADI Off}\o/\o/DCSBIOSInput{KPP_MAIN_EMR|SET_STATE|0}
+	TPMPanelDCSBIOSControl{0G6|ADI On}\o/\o/DCSBIOSInput{KPP_MAIN_EMR|SET_STATE|1}
+	TPMPanelDCSBIOSControl{1G7|NPP Off}\o/\o/DCSBIOSInput{NPP_PWR|SET_STATE|0}
+	TPMPanelDCSBIOSControl{0G7|NPP On}\o/\o/DCSBIOSInput{NPP_PWR|SET_STATE|1}
+	TPMPanelDCSBIOSControl{1G8|AP Off}\o/\o/DCSBIOSInput{SAU_PWR|SET_STATE|0}\o/DCSBIOSInput{SAU_PITCH_PWR|SET_STATE|0}
+	TPMPanelDCSBIOSControl{0G8|AP On}\o/\o/DCSBIOSInput{SAU_PWR|SET_STATE|1}\o/DCSBIOSInput{SAU_PITCH_PWR|SET_STATE|1}
+EndPanel
+
+
+
+
+#--------------------------------------------------------------------
+#Below are all the Virtual Keycodes in use listed. You can manually edit this file using these codes.
+#	LBUTTON
+#	RBUTTON
+#	CANCEL
+#	MBUTTON
+#	XBUTTON1
+#	XBUTTON2
+#	BACK
+#	TAB
+#	CLEAR
+#	RETURN
+#	SHIFT
+#	CONTROL
+#	MENU
+#	PAUSE
+#	CAPITAL
+#	KANA
+#	HANGEUL
+#	HANGUL
+#	JUNJA
+#	FINAL
+#	HANJA
+#	KANJI
+#	ESCAPE
+#	CONVERT
+#	NONCONVERT
+#	ACCEPT
+#	MODECHANGE
+#	SPACE
+#	PRIOR
+#	NEXT
+#	END
+#	HOME
+#	LEFT
+#	UP
+#	RIGHT
+#	DOWN
+#	SELECT
+#	PRINT
+#	EXECUTE
+#	SNAPSHOT
+#	INSERT
+#	DELETE
+#	HELP
+#	VK_0
+#	VK_1
+#	VK_2
+#	VK_3
+#	VK_4
+#	VK_5
+#	VK_6
+#	VK_7
+#	VK_8
+#	VK_9
+#	VK_A
+#	VK_B
+#	VK_C
+#	VK_D
+#	VK_E
+#	VK_F
+#	VK_G
+#	VK_H
+#	VK_I
+#	VK_J
+#	VK_K
+#	VK_L
+#	VK_M
+#	VK_N
+#	VK_O
+#	VK_P
+#	VK_Q
+#	VK_R
+#	VK_S
+#	VK_T
+#	VK_U
+#	VK_V
+#	VK_W
+#	VK_X
+#	VK_Y
+#	VK_Z
+#	LWIN
+#	RWIN
+#	APPS
+#	SLEEP
+#	NUMPAD0
+#	NUMPAD1
+#	NUMPAD2
+#	NUMPAD3
+#	NUMPAD4
+#	NUMPAD5
+#	NUMPAD6
+#	NUMPAD7
+#	NUMPAD8
+#	NUMPAD9
+#	MULTIPLY
+#	ADD
+#	SEPARATOR
+#	SUBTRACT
+#	DECIMAL
+#	DIVIDE
+#	F1
+#	F2
+#	F3
+#	F4
+#	F5
+#	F6
+#	F7
+#	F8
+#	F9
+#	F10
+#	F11
+#	F12
+#	F13
+#	F14
+#	F15
+#	F16
+#	F17
+#	F18
+#	F19
+#	F20
+#	F21
+#	F22
+#	F23
+#	F24
+#	NUMLOCK
+#	SCROLL
+#	LSHIFT
+#	RSHIFT
+#	LCONTROL
+#	RCONTROL
+#	LMENU
+#	RMENU
+#	BROWSER_BACK
+#	BROWSER_FORWARD
+#	BROWSER_REFRESH
+#	BROWSER_STOP
+#	BROWSER_SEARCH
+#	BROWSER_FAVORITES
+#	BROWSER_HOME
+#	VOLUME_MUTE
+#	VOLUME_DOWN
+#	VOLUME_UP
+#	MEDIA_NEXT_TRACK
+#	MEDIA_PREV_TRACK
+#	MEDIA_STOP
+#	MEDIA_PLAY_PAUSE
+#	LAUNCH_MAIL
+#	LAUNCH_MEDIA_SELECT
+#	LAUNCH_APP1
+#	LAUNCH_APP2
+#	OEM_1
+#	OEM_PLUS
+#	OEM_COMMA
+#	OEM_MINUS
+#	OEM_PERIOD
+#	OEM_2
+#	OEM_3
+#	OEM_4
+#	OEM_5
+#	OEM_6
+#	OEM_7
+#	OEM_8
+#	OEM_102
+#	PROCESSKEY
+#	PACKET
+#	ATTN
+#	CRSEL
+#	EXSEL
+#	EREOF
+#	PLAY
+#	ZOOM
+#	NONAME
+#	PA1
+#	OEM_CLEAR
+

@@ -1,0 +1,262 @@
+#This file can be manually edited using any ASCII editor.
+#File created on 7/9/2015 12:00:00 AM 7/9/2015 8:01:14 PM
+#  ***Do not change the location nor content of the line below***
+Airframe=NONE
+
+
+PanelType=PZ55SwitchPanel
+PanelInstanceID=\\?\hid#vid_06a3&pid_0d67#7&2e3b65ed&1&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}
+BeginPanel
+	SwitchPanelKey{0SWITCHKEY_MASTER_BAT}\o/OSKeyPress{INFORMATION=^Power Systems Off^[FiftyMilliSec,LMENU + LCONTROL + LSHIFT + VK_E,FiftyMilliSec][FiftyMilliSec,LMENU + LCONTROL + LSHIFT + VK_W,FiftyMilliSec][FiftyMilliSec,LMENU + LCONTROL + LSHIFT + VK_Q,FiftyMilliSec][FiftyMilliSec,LCONTROL + LSHIFT + VK_E,FiftyMilliSec][FiftyMilliSec,LCONTROL + LSHIFT + VK_W,FiftyMilliSec][FiftyMilliSec,LCONTROL + LSHIFT + VK_Q,FiftyMilliSec][FiftyMilliSec,LCONTROL + VK_R,FiftyMilliSec][FiftyMilliSec,LMENU + LCONTROL + LSHIFT + VK_E,FiftyMilliSec][FiftyMilliSec,LMENU + LCONTROL + LSHIFT + VK_W,FiftyMilliSec][FiftyMilliSec,LMENU + LCONTROL + LSHIFT + VK_Q,FiftyMilliSec]}
+	SwitchPanelKey{1SWITCHKEY_MASTER_BAT}\o/OSKeyPress{INFORMATION=^Power Systems On^[FiftyMilliSec,LMENU + LCONTROL + LSHIFT + VK_E,FiftyMilliSec][FiftyMilliSec,LMENU + LCONTROL + LSHIFT + VK_W,FiftyMilliSec][FiftyMilliSec,LMENU + LCONTROL + LSHIFT + VK_Q,FiftyMilliSec][FiftyMilliSec,LCONTROL + LSHIFT + VK_E,FiftyMilliSec][FiftyMilliSec,LCONTROL + LSHIFT + VK_W,FiftyMilliSec][FiftyMilliSec,LCONTROL + LSHIFT + VK_Q,FiftyMilliSec][FiftyMilliSec,LCONTROL + VK_R,FiftyMilliSec][FiftyMilliSec,LMENU + LCONTROL + LSHIFT + VK_E,FiftyMilliSec][FiftyMilliSec,LMENU + LCONTROL + LSHIFT + VK_W,FiftyMilliSec][FiftyMilliSec,LMENU + LCONTROL + LSHIFT + VK_Q,FiftyMilliSec]}
+	SwitchPanelKey{1KNOB_ENGINE_OFF}\o/OSKeyPress{FiftyMilliSec,RMENU + VK_L}
+	SwitchPanelKey{1KNOB_ENGINE_RIGHT}\o/OSKeyPress{FiftyMilliSec,RMENU + VK_L}
+	SwitchPanelKey{1KNOB_ENGINE_LEFT}\o/OSKeyPress{FiftyMilliSec,RMENU + VK_L}
+	SwitchPanelKey{1KNOB_ENGINE_BOTH}\o/OSKeyPress{FiftyMilliSec,RMENU + VK_L}
+	SwitchPanelKey{1KNOB_ENGINE_START}\o/OSKeyPress{FiftyMilliSec,RMENU + VK_L}
+	SwitchPanelKey{1SWITCHKEY_LIGHTS_BEACON}\o/OSKeyPress{FiftyMilliSec,RSHIFT + VK_J}
+	SwitchPanelKey{0SWITCHKEY_LIGHTS_BEACON}\o/OSKeyPress{FiftyMilliSec,RSHIFT + VK_J}
+	SwitchPanelKey{0SWITCHKEY_CLOSE_COWL}\o/OSKeyPress{FiftyMilliSec,RCONTROL + VK_C}
+	SwitchPanelKey{1SWITCHKEY_CLOSE_COWL}\o/OSKeyPress{FiftyMilliSec,RCONTROL + VK_C}
+	SwitchPanelKey{1SWITCHKEY_AVIONICS_MASTER}\o/OSKeyPress{INFORMATION=^Radios On^[FiftyMilliSec,LMENU + LCONTROL + VK_Z,FiftyMilliSec][FiftyMilliSec,RMENU + RCONTROL + VK_P,FiftyMilliSec][FiftyMilliSec,LMENU + LCONTROL + VK_P,FiftyMilliSec][FiftyMilliSec,LCONTROL + LSHIFT + VK_O,FiftyMilliSec][FiftyMilliSec,LCONTROL + LSHIFT + VK_P,FiftyMilliSec]}
+	SwitchPanelKey{0SWITCHKEY_AVIONICS_MASTER}\o/OSKeyPress{INFORMATION=^Radios Off^[FiftyMilliSec,LMENU + LCONTROL + VK_Z,FiftyMilliSec][FiftyMilliSec,RMENU + RCONTROL + VK_P,FiftyMilliSec][FiftyMilliSec,LMENU + LCONTROL + VK_P,FiftyMilliSec][FiftyMilliSec,LCONTROL + LSHIFT + VK_O,FiftyMilliSec][FiftyMilliSec,LCONTROL + LSHIFT + VK_P,FiftyMilliSec]}
+	SwitchPanelKey{1SWITCHKEY_MASTER_ALT}\o/OSKeyPress{INFORMATION=^Fire Extinguisher System On^[FiftyMilliSec,LMENU + LCONTROL + LSHIFT + VK_Z,FiftyMilliSec][FiftyMilliSec,LCONTROL + LSHIFT + VK_Z,FiftyMilliSec][FiftyMilliSec,LMENU + LCONTROL + LSHIFT + VK_Z,FiftyMilliSec]}
+	SwitchPanelKey{0SWITCHKEY_MASTER_ALT}\o/OSKeyPress{INFORMATION=^Fire Extinguishers System Off^[FiftyMilliSec,LMENU + LCONTROL + LSHIFT + VK_Z,FiftyMilliSec][FiftyMilliSec,LCONTROL + LSHIFT + VK_Z,FiftyMilliSec][FiftyMilliSec,LCONTROL + LSHIFT + VK_Z,FiftyMilliSec][FiftyMilliSec,LMENU + LCONTROL + LSHIFT + VK_Z,FiftyMilliSec]}
+	SwitchPanelKey{1SWITCHKEY_DE_ICE}\o/OSKeyPress{INFORMATION=^Weapons System On^[FiftyMilliSec,LMENU + LCONTROL + LSHIFT + VK_D,FiftyMilliSec][FiftyMilliSec,LMENU + LSHIFT + VK_D,FiftyMilliSec][FiftyMilliSec,LMENU + LCONTROL + LSHIFT + VK_D,FiftyMilliSec]}
+	SwitchPanelKey{0SWITCHKEY_DE_ICE}\o/OSKeyPress{INFORMATION=^Weapons System Off^[FiftyMilliSec,LMENU + LCONTROL + LSHIFT + VK_D,FiftyMilliSec][FiftyMilliSec,LMENU + LSHIFT + VK_D,FiftyMilliSec][FiftyMilliSec,LMENU + LCONTROL + LSHIFT + VK_D,FiftyMilliSec]}
+	SwitchPanelKey{1SWITCHKEY_PITOT_HEAT}\o/OSKeyPress{INFORMATION=^IFF & NAV on^[FiftyMilliSec,LMENU + LCONTROL + LSHIFT + VK_I,FiftyMilliSec][FiftyMilliSec,LSHIFT + VK_N,FiftyMilliSec]}
+	SwitchPanelKey{0SWITCHKEY_PITOT_HEAT}\o/OSKeyPress{FiftyMilliSec,LMENU + LCONTROL + LSHIFT + VK_I}
+	SwitchPanelKey{1SWITCHKEY_LIGHTS_PANEL}\o/OSKeyPress{INFORMATION=^UV-26 On^[FiftyMilliSec,LCONTROL + LSHIFT + VK_C,FiftyMilliSec][FiftyMilliSec,LCONTROL + LSHIFT + VK_C,FiftyMilliSec]}
+	SwitchPanelKey{0SWITCHKEY_LIGHTS_PANEL}\o/OSKeyPress{FiftyMilliSec,LCONTROL + LSHIFT + VK_C}
+	SwitchPanelKey{1SWITCHKEY_FUEL_PUMP}\o/OSKeyPress{INFORMATION=^Forward/Aft Fuel Pumps On^[FiftyMilliSec,LCONTROL + LSHIFT + VK_A,FiftyMilliSec][FiftyMilliSec,LCONTROL + LSHIFT + VK_D,FiftyMilliSec]}
+	SwitchPanelKey{0SWITCHKEY_FUEL_PUMP}\o/OSKeyPress{INFORMATION=^Forward/Aft Fuel Pumps Off^[FiftyMilliSec,LCONTROL + LSHIFT + VK_A,FiftyMilliSec][FiftyMilliSec,LCONTROL + LSHIFT + VK_D,FiftyMilliSec]}
+	SwitchPanelKey{1SWITCHKEY_LIGHTS_NAV}\o/OSKeyPress{INFORMATION=^APU Shutoff Valve Open^[FiftyMilliSec,RMENU + RCONTROL + RSHIFT + VK_L,FiftyMilliSec][FiftyMilliSec,RCONTROL + RSHIFT + VK_L,FiftyMilliSec][FiftyMilliSec,RMENU + RCONTROL + RSHIFT + VK_L,FiftyMilliSec]}
+	SwitchPanelKey{0SWITCHKEY_LIGHTS_NAV}\o/OSKeyPress{INFORMATION=^APU Shutoff Valve Closed^[FiftyMilliSec,RMENU + RCONTROL + RSHIFT + VK_L,FiftyMilliSec][FiftyMilliSec,RCONTROL + RSHIFT + VK_L,FiftyMilliSec][FiftyMilliSec,RMENU + RCONTROL + RSHIFT + VK_L,FiftyMilliSec]}
+	SwitchPanelKey{1SWITCHKEY_LIGHTS_STROBE}\o/OSKeyPress{INFORMATION=^R/L Eng S/O Valve & EEG Open^[FiftyMilliSec,RMENU + RCONTROL + RSHIFT + VK_J,FiftyMilliSec][FiftyMilliSec,RMENU + RCONTROL + RSHIFT + VK_K,FiftyMilliSec][FiftyMilliSec,RCONTROL + RSHIFT + VK_J,FiftyMilliSec][FiftyMilliSec,RCONTROL + RSHIFT + VK_K,FiftyMilliSec][FiftyMilliSec,RMENU + RCONTROL + RSHIFT + VK_J,FiftyMilliSec][FiftyMilliSec,RMENU + RCONTROL + RSHIFT + VK_K,FiftyMilliSec][FiftyMilliSec,RMENU + RCONTROL + VK_X,FiftyMilliSec][FiftyMilliSec,RMENU + RCONTROL + VK_Z,FiftyMilliSec][FiftyMilliSec,RCONTROL + VK_X,FiftyMilliSec][FiftyMilliSec,RCONTROL + VK_Z,FiftyMilliSec][FiftyMilliSec,RMENU + RCONTROL + VK_X,FiftyMilliSec][FiftyMilliSec,RMENU + RCONTROL + VK_Z,FiftyMilliSec]}
+	SwitchPanelKey{0SWITCHKEY_LIGHTS_STROBE}\o/OSKeyPress{INFORMATION=^R/L Eng S/O Valve & EEG Closed^[FiftyMilliSec,RMENU + RCONTROL + RSHIFT + VK_J,FiftyMilliSec][FiftyMilliSec,RMENU + RCONTROL + RSHIFT + VK_K,FiftyMilliSec][FiftyMilliSec,RCONTROL + RSHIFT + VK_J,FiftyMilliSec][FiftyMilliSec,RCONTROL + RSHIFT + VK_K,FiftyMilliSec][FiftyMilliSec,RMENU + RCONTROL + RSHIFT + VK_J,FiftyMilliSec][FiftyMilliSec,RMENU + RCONTROL + RSHIFT + VK_K,FiftyMilliSec][FiftyMilliSec,RMENU + RCONTROL + VK_X,FiftyMilliSec][FiftyMilliSec,RMENU + RCONTROL + VK_Z,FiftyMilliSec][FiftyMilliSec,RCONTROL + VK_X,FiftyMilliSec][FiftyMilliSec,RCONTROL + VK_Z,FiftyMilliSec][FiftyMilliSec,RMENU + RCONTROL + VK_X,FiftyMilliSec][FiftyMilliSec,RMENU + RCONTROL + VK_Z,FiftyMilliSec]}
+	SwitchPanelKey{1SWITCHKEY_LIGHTS_TAXI}\o/OSKeyPress{INFORMATION=^Elec Power Renerator L/R On^[FiftyMilliSec,LCONTROL + LSHIFT + VK_U,FiftyMilliSec][FiftyMilliSec,LCONTROL + LSHIFT + VK_Y,FiftyMilliSec]}
+	SwitchPanelKey{0SWITCHKEY_LIGHTS_TAXI}\o/OSKeyPress{INFORMATION=^Elec Power Generator L/R Off^[FiftyMilliSec,LCONTROL + LSHIFT + VK_U,FiftyMilliSec][FiftyMilliSec,LCONTROL + LSHIFT + VK_Y,FiftyMilliSec]}
+	SwitchPanelKey{1SWITCHKEY_LIGHTS_LANDING}\o/OSKeyPress{INFORMATION=^Ejecting System Armed^[FiftyMilliSec,RMENU + RCONTROL + RSHIFT + VK_E,FiftyMilliSec][FiftyMilliSec,RMENU + RSHIFT + VK_E,FiftyMilliSec][FiftyMilliSec,RMENU + RSHIFT + VK_R,FiftyMilliSec][FiftyMilliSec,RMENU + RSHIFT + VK_T,FiftyMilliSec][FiftyMilliSec,RMENU + RCONTROL + RSHIFT + VK_E,FiftyMilliSec]}
+	SwitchPanelKey{0SWITCHKEY_LIGHTS_LANDING}\o/OSKeyPress{INFORMATION=^Ejecting System Uarmed^[FiftyMilliSec,RMENU + RCONTROL + RSHIFT + VK_E,FiftyMilliSec][FiftyMilliSec,RMENU + RSHIFT + VK_E,FiftyMilliSec][FiftyMilliSec,RMENU + RSHIFT + VK_R,FiftyMilliSec][FiftyMilliSec,RMENU + RSHIFT + VK_T,FiftyMilliSec][FiftyMilliSec,RMENU + RCONTROL + RSHIFT + VK_E,FiftyMilliSec]}
+	SwitchPanelKey{1LEVER_GEAR_DOWN}\o/OSKeyPress{FiftyMilliSec,VK_G}
+	SwitchPanelKey{1LEVER_GEAR_UP}\o/OSKeyPress{FiftyMilliSec,VK_G}
+EndPanel
+
+
+PanelType=PZ70MultiPanel
+PanelInstanceID=\\?\hid#vid_06a3&pid_0d06#7&175d3b7&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}
+BeginPanel
+	MultiPanelKnob{1HDG_BUTTON}\o/OSKeyPress{ThreeSeconds,LMENU + LCONTROL + LSHIFT + VK_P}
+	MultiPanelKnob{1FLAPS_LEVER_DOWN}\o/OSKeyPress{HalfSecond,VK_M}
+	MultiPanelKnob{1NAV_BUTTON}\o/OSKeyPress{FiftyMilliSec,RMENU + RCONTROL + VK_V}
+	MultiPanelKnob{1IAS_BUTTON}\o/OSKeyPress{TwoSeconds,LCONTROL + LSHIFT + VK_T}
+	MultiPanelKnob{1ALT_BUTTON}\o/OSKeyPress{ThreeSeconds,LMENU + LSHIFT + VK_R}
+	MultiPanelKnob{1VS_BUTTON}\o/OSKeyPress{Second,LMENU + LCONTROL + VK_N}
+	MultiPanelKnob{1FLAPS_LEVER_UP}\o/OSKeyPress{HalfSecond,VK_L}
+	MultiPanelKnob{0AUTO_THROTTLE}\o/OSKeyPress{INFORMATION=^Master Arm/Weapons Eject Arm Off^[FiftyMilliSec,LMENU + VK_W,FiftyMilliSec][FiftyMilliSec,LMENU + LSHIFT + VK_W,FiftyMilliSec]}
+	MultiPanelKnob{1AUTO_THROTTLE}\o/OSKeyPress{INFORMATION=^Master Arm/Weapons Eject Arm On^[FiftyMilliSec,LMENU + VK_W,FiftyMilliSec][FiftyMilliSec,LMENU + LSHIFT + VK_W,FiftyMilliSec]}
+EndPanel
+
+
+PanelType=TPM
+PanelInstanceID=\\?\hid#vid_06a3&pid_0b4d#7&30b328f&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}
+BeginPanel
+	TPMPanelSwitch{1G1}\o/OSKeyPress{FiftyMilliSec,LCONTROL + LSHIFT + VK_H}
+	TPMPanelSwitch{0G1}\o/OSKeyPress{FiftyMilliSec,LCONTROL + LSHIFT + VK_H}
+	TPMPanelSwitch{1G2}\o/OSKeyPress{INFORMATION=^EKRAN Off^[FiftyMilliSec,RMENU + RSHIFT + VK_L,FiftyMilliSec][FiftyMilliSec,LMENU + LCONTROL + LSHIFT + VK_N,FiftyMilliSec][FiftyMilliSec,LCONTROL + LSHIFT + VK_N,FiftyMilliSec]}
+	TPMPanelSwitch{0G2}\o/OSKeyPress{INFORMATION=^EKRAN On^[FiftyMilliSec,RMENU + RSHIFT + VK_L,FiftyMilliSec][FiftyMilliSec,LCONTROL + LSHIFT + VK_N,FiftyMilliSec][FiftyMilliSec,LMENU + LCONTROL + LSHIFT + VK_N,FiftyMilliSec]}
+	TPMPanelSwitch{1G3}\o/OSKeyPress{FiftyMilliSec,LSHIFT + VK_D}
+	TPMPanelSwitch{0G3}\o/OSKeyPress{FiftyMilliSec,LSHIFT + VK_D}
+	TPMPanelSwitch{1G4}\o/OSKeyPress{FiftyMilliSec,RSHIFT + VK_0}
+	TPMPanelSwitch{0G4}\o/OSKeyPress{FiftyMilliSec,RSHIFT + VK_0}
+	TPMPanelSwitch{1G5}\o/OSKeyPress{INFORMATION=^Key press sequence^[FiftyMilliSec,RMENU + RCONTROL + VK_I,FiftyMilliSec][FiftyMilliSec,RMENU + RSHIFT + VK_I,FiftyMilliSec]}
+	TPMPanelSwitch{0G5}\o/OSKeyPress{INFORMATION=^Key press sequence^[FiftyMilliSec,RMENU + RCONTROL + VK_I,FiftyMilliSec][FiftyMilliSec,RMENU + RSHIFT + VK_I,FiftyMilliSec]}
+	TPMPanelSwitch{1G6}\o/OSKeyPress{FiftyMilliSec,LCONTROL + VK_N}
+	TPMPanelSwitch{0G6}\o/OSKeyPress{FiftyMilliSec,LCONTROL + VK_N}
+	TPMPanelSwitch{1G7}\o/OSKeyPress{FiftyMilliSec,RSHIFT + VK_N}
+	TPMPanelSwitch{0G7}\o/OSKeyPress{FiftyMilliSec,RSHIFT + VK_N}
+	TPMPanelSwitch{1G8}\o/OSKeyPress{FiftyMilliSec,RCONTROL + VK_B}
+	TPMPanelSwitch{0G8}\o/OSKeyPress{FiftyMilliSec,RCONTROL + VK_B}
+	TPMPanelSwitch{1G9}\o/OSKeyPress{FiftyMilliSec,RSHIFT + VK_L}
+	TPMPanelSwitch{0G9}\o/OSKeyPress{INFORMATION=^Key press sequence^[FiftyMilliSec,RSHIFT + VK_L,FiftyMilliSec][FiftyMilliSec,RSHIFT + VK_L,FiftyMilliSec]}
+EndPanel
+
+
+
+
+#--------------------------------------------------------------------
+#Below are all the Virtual Keycodes in use listed. You can manually edit this file using these codes.
+#	LBUTTON
+#	RBUTTON
+#	CANCEL
+#	MBUTTON
+#	XBUTTON1
+#	XBUTTON2
+#	BACK
+#	TAB
+#	CLEAR
+#	RETURN
+#	SHIFT
+#	CONTROL
+#	MENU
+#	PAUSE
+#	CAPITAL
+#	KANA
+#	HANGEUL
+#	HANGUL
+#	JUNJA
+#	FINAL
+#	HANJA
+#	KANJI
+#	ESCAPE
+#	CONVERT
+#	NONCONVERT
+#	ACCEPT
+#	MODECHANGE
+#	SPACE
+#	PRIOR
+#	NEXT
+#	END
+#	HOME
+#	LEFT
+#	UP
+#	RIGHT
+#	DOWN
+#	SELECT
+#	PRINT
+#	EXECUTE
+#	SNAPSHOT
+#	INSERT
+#	DELETE
+#	HELP
+#	VK_0
+#	VK_1
+#	VK_2
+#	VK_3
+#	VK_4
+#	VK_5
+#	VK_6
+#	VK_7
+#	VK_8
+#	VK_9
+#	VK_A
+#	VK_B
+#	VK_C
+#	VK_D
+#	VK_E
+#	VK_F
+#	VK_G
+#	VK_H
+#	VK_I
+#	VK_J
+#	VK_K
+#	VK_L
+#	VK_M
+#	VK_N
+#	VK_O
+#	VK_P
+#	VK_Q
+#	VK_R
+#	VK_S
+#	VK_T
+#	VK_U
+#	VK_V
+#	VK_W
+#	VK_X
+#	VK_Y
+#	VK_Z
+#	LWIN
+#	RWIN
+#	APPS
+#	SLEEP
+#	NUMPAD0
+#	NUMPAD1
+#	NUMPAD2
+#	NUMPAD3
+#	NUMPAD4
+#	NUMPAD5
+#	NUMPAD6
+#	NUMPAD7
+#	NUMPAD8
+#	NUMPAD9
+#	MULTIPLY
+#	ADD
+#	SEPARATOR
+#	SUBTRACT
+#	DECIMAL
+#	DIVIDE
+#	F1
+#	F2
+#	F3
+#	F4
+#	F5
+#	F6
+#	F7
+#	F8
+#	F9
+#	F10
+#	F11
+#	F12
+#	F13
+#	F14
+#	F15
+#	F16
+#	F17
+#	F18
+#	F19
+#	F20
+#	F21
+#	F22
+#	F23
+#	F24
+#	NUMLOCK
+#	SCROLL
+#	LSHIFT
+#	RSHIFT
+#	LCONTROL
+#	RCONTROL
+#	LMENU
+#	RMENU
+#	BROWSER_BACK
+#	BROWSER_FORWARD
+#	BROWSER_REFRESH
+#	BROWSER_STOP
+#	BROWSER_SEARCH
+#	BROWSER_FAVORITES
+#	BROWSER_HOME
+#	VOLUME_MUTE
+#	VOLUME_DOWN
+#	VOLUME_UP
+#	MEDIA_NEXT_TRACK
+#	MEDIA_PREV_TRACK
+#	MEDIA_STOP
+#	MEDIA_PLAY_PAUSE
+#	LAUNCH_MAIL
+#	LAUNCH_MEDIA_SELECT
+#	LAUNCH_APP1
+#	LAUNCH_APP2
+#	OEM_1
+#	OEM_PLUS
+#	OEM_COMMA
+#	OEM_MINUS
+#	OEM_PERIOD
+#	OEM_2
+#	OEM_3
+#	OEM_4
+#	OEM_5
+#	OEM_6
+#	OEM_7
+#	OEM_8
+#	OEM_102
+#	PROCESSKEY
+#	PACKET
+#	ATTN
+#	CRSEL
+#	EXSEL
+#	EREOF
+#	PLAY
+#	ZOOM
+#	NONAME
+#	PA1
+#	OEM_CLEAR
+
