@@ -21,6 +21,10 @@ Contributors: BlackLibrary (aka WarLord), pdmarsh, Capt Zeen, BaD CrC, ron533, l
 
 -------------------------------------------------------------
 
+If you have some Profiles to share please contact me
+
+-------------------------------------------------------------
+
 Put these files in a Folder and open it in DCS-Flightpanels.
 
 Before use, open the files with a text editor and change PanelInstanceID= to your IDs
