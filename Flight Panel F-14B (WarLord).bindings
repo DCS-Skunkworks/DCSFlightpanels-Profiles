@@ -1,5 +1,5 @@
 #This file can be manually edited using any ASCII editor.
-#File created on 21.03.2019 00:00:00 21.03.2019 23:14:17#
+#File created on 23.03.2019 00:00:00 23.03.2019 15:28:29#
 #
 #IMPORTANT INFO REGARDING the keyboard key AltGr (RAlt as named in DCS) or RMENU as named DCSFP
 #When you press AltGr DCSFP will register RMENU + LCONTROL. This is a bug which "just is". You need to modify that in the profile
@@ -16,11 +16,25 @@ PanelType=PZ55SwitchPanel
 PanelInstanceID=\\?\hid#vid_06a3&pid_0d67#8&2612a448&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}
 PanelSettingsVersion=0X
 BeginPanel
+	SwitchPanelKey{0SWITCHKEY_CLOSE_COWL}\o/OSKeyPress{FiftyMilliSec,LCONTROL + VK_C}
+	SwitchPanelKey{1SWITCHKEY_CLOSE_COWL}\o/OSKeyPress{FiftyMilliSec,LCONTROL + VK_C}
 	SwitchPanelDCSBIOSControl{1LEVER_GEAR_DOWN|Hook DOWN}\o/\o/DCSBIOSInput{PLT_HOOK_LEVER|SET_STATE|1|0}
 	SwitchPanelDCSBIOSControl{1LEVER_GEAR_UP|Hook UP}\o/\o/DCSBIOSInput{PLT_HOOK_LEVER|SET_STATE|0|0}
-	SwitchPanelLedLeft{YELLOW|DCSBiosOutput{PLT_AOA_OPT|Equals|1}}
+	SwitchPanelDCSBIOSControl{1KNOB_ENGINE_OFF|HUD TAKEOFF}\o/\o/DCSBIOSInput{PLT_HUD_MODE_TAKEOFF|SET_STATE|1|0}
+	SwitchPanelDCSBIOSControl{1KNOB_ENGINE_RIGHT|HUD CRUISE}\o/\o/DCSBIOSInput{PLT_HUD_MODE_CRUISE|SET_STATE|1|0}
+	SwitchPanelDCSBIOSControl{1KNOB_ENGINE_LEFT|HUD A2A}\o/\o/DCSBIOSInput{PLT_HUD_MODE_A2A|SET_STATE|1|0}
+	SwitchPanelDCSBIOSControl{1KNOB_ENGINE_BOTH|HUD A2G}\o/\o/DCSBIOSInput{PLT_HUD_MODE_A2G|SET_STATE|1|0}
+	SwitchPanelDCSBIOSControl{1KNOB_ENGINE_START|HUD LANDING}\o/\o/DCSBIOSInput{PLT_HUD_MODE_LAND|SET_STATE|1|0}
+	SwitchPanelDCSBIOSControl{1SWITCHKEY_LIGHTS_STROBE|AntiCol Light ON}\o/\o/DCSBIOSInput{PLT_ANTICOL_LIGHT|SET_STATE|1|0}
+	SwitchPanelDCSBIOSControl{0SWITCHKEY_LIGHTS_STROBE|AntiCol Light OFF}\o/\o/DCSBIOSInput{PLT_ANTICOL_LIGHT|SET_STATE|0|0}
+	SwitchPanelDCSBIOSControl{1SWITCHKEY_LIGHTS_TAXI|Taxi Light ON}\o/\o/DCSBIOSInput{PLT_TAXI_LIGHT|SET_STATE|1|0}
+	SwitchPanelDCSBIOSControl{0SWITCHKEY_LIGHTS_TAXI|Taxi Light OFF}\o/\o/DCSBIOSInput{PLT_TAXI_LIGHT|SET_STATE|0|0}
 	SwitchPanelLedUp{GREEN|DCSBiosOutput{PLT_AOA_SLOW|Equals|1}}
+	SwitchPanelLedUp{DARK|DCSBiosOutput{PLT_AOA_SLOW|Equals|0}}
+	SwitchPanelLedLeft{YELLOW|DCSBiosOutput{PLT_AOA_OPT|Equals|1}}
+	SwitchPanelLedLeft{DARK|DCSBiosOutput{PLT_AOA_OPT|Equals|0}}
 	SwitchPanelLedRight{RED|DCSBiosOutput{PLT_AOA_FAST|Equals|1}}
+	SwitchPanelLedRight{DARK|DCSBiosOutput{PLT_AOA_FAST|Equals|0}}
 	ManualLandingGearLEDs{False}
 EndPanel
 
@@ -36,8 +50,18 @@ BeginPanel
 	SwitchPanelDCSBIOSControl{1KNOB_ENGINE_LEFT|STEER AWL}\o/\o/DCSBIOSInput{PLT_NAV_STEER_AWL|SET_STATE|1|0}
 	SwitchPanelDCSBIOSControl{1KNOB_ENGINE_BOTH|STEER VEC}\o/\o/DCSBIOSInput{PLT_NAV_STEER_VECTOR|SET_STATE|1|0}
 	SwitchPanelDCSBIOSControl{1KNOB_ENGINE_START|STEER MAN}\o/\o/DCSBIOSInput{PLT_NAV_STEER_MAN|SET_STATE|1|0}
-	SwitchPanelLedRight{RED|DCSBiosOutput{PLT_GEAR_LIGHT|Equals|1}}
+	SwitchPanelDCSBIOSControl{1SWITCHKEY_FUEL_PUMP|Refuel Probe ON}\o/\o/DCSBIOSInput{PLT_REFUEL_PROBE|SET_STATE|2|0}
+	SwitchPanelDCSBIOSControl{0SWITCHKEY_FUEL_PUMP|Refuel Probe OFF}\o/\o/DCSBIOSInput{PLT_REFUEL_PROBE|SET_STATE|0|0}
+	SwitchPanelDCSBIOSControl{0SWITCHKEY_CLOSE_COWL|Anti Skid ON}\o/\o/DCSBIOSInput{PLT_ANTI_SKID_SW|SET_STATE|0|0}
+	SwitchPanelDCSBIOSControl{1SWITCHKEY_CLOSE_COWL|Anti Skid OFF}\o/\o/DCSBIOSInput{PLT_ANTI_SKID_SW|SET_STATE|1|0}
+	SwitchPanelDCSBIOSControl{1SWITCHKEY_LIGHTS_LANDING|Master Arm ON}\o/\o/DCSBIOSInput{PLT_MASTER_ARM_COVER|SET_STATE|1|0}\o/DCSBIOSInput{PLT_MASTER_ARM_SW|SET_STATE|0|500}
+	SwitchPanelDCSBIOSControl{0SWITCHKEY_LIGHTS_LANDING|Master Arm OFF}\o/\o/DCSBIOSInput{PLT_MASTER_ARM_SW|SET_STATE|1|0}\o/DCSBIOSInput{PLT_MASTER_ARM_COVER|SET_STATE|0|500}
 	SwitchPanelLedUp{RED|DCSBiosOutput{PLT_RADAR_ALT_LIGHT|Equals|1}}
+	SwitchPanelLedUp{DARK|DCSBiosOutput{PLT_RADAR_ALT_LIGHT|Equals|0}}
+	SwitchPanelLedRight{RED|DCSBiosOutput{PLT_GEAR_LIGHT|Equals|1}}
+	SwitchPanelLedRight{DARK|DCSBiosOutput{PLT_GEAR_LIGHT|Equals|0}}
+	SwitchPanelLedLeft{YELLOW|DCSBiosOutput{PLT_HUD_LIGHT_NWS|Equals|1}}
+	SwitchPanelLedLeft{DARK|DCSBiosOutput{PLT_HUD_LIGHT_NWS|Equals|0}}
 	ManualLandingGearLEDs{False}
 EndPanel
 
@@ -48,6 +72,11 @@ PanelSettingsVersion=2X
 BeginPanel
 	MultiPanelDCSBIOSControl{ALT}\o/{1FLAPS_LEVER_UP|Fuel Dump OFF}\o/\o/DCSBIOSInput{PLT_FUEL_DUMP|SET_STATE|0|0}
 	MultiPanelDCSBIOSControl{ALT}\o/{1FLAPS_LEVER_DOWN|Fuel Dump ON}\o/\o/DCSBIOSInput{PLT_FUEL_DUMP|SET_STATE|1|0}
+	MultiPanelDCSBIOSControl{IAS}\o/{1FLAPS_LEVER_UP|Fuel Dump OFF}\o/\o/DCSBIOSInput{PLT_FUEL_DUMP|SET_STATE|0|0}
+	MultiPanelDCSBIOSControl{IAS}\o/{1FLAPS_LEVER_DOWN|Fuel Dump ON}\o/\o/DCSBIOSInput{PLT_FUEL_DUMP|SET_STATE|1|0}
+	MultiPanelDCSBIOSControlLCD{ALT}\o/{UpperLCD}\o/DCSBiosOutput{ALT_MSL_FT|Equals|0}
+	MultiPanelDCSBIOSControlLCD{ALT}\o/{LowerLCD}\o/DCSBiosOutput{HDG_DEG|Equals|0}
+	MultiPanelDCSBIOSControlLCD{IAS}\o/{UpperLCD}\o/DCSBiosOutput{PLT_FUEL_TOTAL_DISP|Equals|0}
 EndPanel
 
 
