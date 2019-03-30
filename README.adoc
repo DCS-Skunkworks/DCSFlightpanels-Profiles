@@ -14,11 +14,11 @@ Planes included:
 * F5-E 
 * FC3 (F-15)+SRS - (optimized for F-15 works with all FC3) DCS-SimpleRadioStandalone
 * Ka50
-* L39ZA
-* L39C 
+* L-39ZA
+* L-39C 
 * Mi8
-* Mig-21
-* P-51-D
+* Mig-21Bis
+* P-51D / TF-51
 * UH1-H
 
 Contributors: BlackLibrary(aka WarLord), pdmarsh, Capt Zeen, BaD CrC, ron533, lizelong952, VirusAM
