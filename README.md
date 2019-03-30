@@ -42,8 +42,8 @@ PanelInstanceID=\\?\xyzxyzxyzxyzxyzxyzxyzxyzxyzxyzxyzxyzxyzxyzxy
 
 == Support
 
-* We have a https://discord.gg/5svGwKX[Discord Server]
-* Here you find the https://github.com/DCSFlightpanels/DCSFlightpanels[DCSFlightPanels]
-* Here you find the https://github.com/DCSFlightpanels/dcs-bios[DCS-BIOS]
-* Here you find the https://github.com/ciribob/DCS-SimpleRadioStandalone[DCS-SimpleRadioStandalone]
-* If you will support us https://www.paypal.me/jerkerdahlblom[Donate]
+* We have a https://discord.gg/5svGwKX [Discord Server]
+* Here you find the https://github.com/DCSFlightpanels/DCSFlightpanels [DCSFlightPanels]
+* Here you find the https://github.com/DCSFlightpanels/dcs-bios [DCS-BIOS]
+* Here you find the https://github.com/ciribob/DCS-SimpleRadioStandalone [DCS-SimpleRadioStandalone]
+* If you will support us https://www.paypal.me/jerkerdahlblom [Donate]
