@@ -40,8 +40,6 @@ PanelInstanceID=\\?\xyzxyzxyzxyzxyzxyzxyzxyzxyzxyzxyzxyzxyzxyzxy
 6. that will change the ID of the USB address that you plugged the Panel and should work now!
 
 
-https://github.com/ciribob/DCS-SimpleRadioStandalone
-
-https://github.com/DCSFlightpanels/DCSFlightpanels
-
-https://github.com/DCSFlightpanels/dcs-bios
+https://github.com/ciribob/DCS-SimpleRadioStandalone[DCS-SimpleRadioStandalone]
+https://github.com/DCSFlightpanels/DCSFlightpanels[DCSFlightPanels]
+https://github.com/DCSFlightpanels/dcs-bios\[DCS-BIOS]
