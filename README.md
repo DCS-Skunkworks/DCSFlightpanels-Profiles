@@ -1,7 +1,10 @@
-# DCS-FlighPanel-Profiles
+ifdef::env-github[{set:link-ext:adoc}]
+ifndef::env-github[{set:link-ext:html}]
+
+== DCS-FlighPanel-Profiles
 
 Collection of Profiles for Flightpanels (DCS WORLD)
--------------------------------------------------------------
+
 Planes included:
 
 * A-10C
@@ -18,19 +21,14 @@ Planes included:
 * P-51-D
 * UH1-H
 
-Contributors: BlackLibrary (aka WarLord), pdmarsh, Capt Zeen, BaD CrC, ron533, lizelong952
+Contributors: BlackLibrary(aka WarLord), pdmarsh, Capt Zeen, BaD CrC, ron533, lizelong952, VirusAM
 
--------------------------------------------------------------
-
-If you have some Profiles to share please contact me(WarLord) on our Discord Server
-
--------------------------------------------------------------
+== Instruction
 
 Put these files in a Folder and open it in DCS-Flightpanels.
 
 Before use, open the files with a text editor and change PanelInstanceID= to your IDs
 
-Instruction:
 1. open DCSFlightpanels.exe
 2. open a profile and close the announcement (The XXX Panel with ID xyzxyzxyz cannot found)
 3. execute the ID button to copy the id no. to clipboard
@@ -39,11 +37,11 @@ Instruction:
 PanelInstanceID=\\?\xyzxyzxyzxyzxyzxyzxyzxyzxyzxyzxyzxyzxyzxyzxy
 6. that will change the ID of the USB address that you plugged the Panel and should work now!
 
-
 == Support
 
-* We have a https://discord.gg/5svGwKX [Discord Server]
-* Here you find the https://github.com/DCSFlightpanels/DCSFlightpanels [DCSFlightPanels]
-* Here you find the https://github.com/DCSFlightpanels/dcs-bios [DCS-BIOS]
-* Here you find the https://github.com/ciribob/DCS-SimpleRadioStandalone [DCS-SimpleRadioStandalone]
-* If you will support us https://www.paypal.me/jerkerdahlblom [Donate]
+* If you have some Profiles to share please contact me(WarLord) on our Discord Server
+* We have a https://discord.gg/5svGwKX[Discord Server]
+* Here you find the https://github.com/DCSFlightpanels/DCSFlightpanels[DCSFlightPanels]
+* Here you find the https://github.com/DCSFlightpanels/dcs-bios[DCS-BIOS]
+* Here you find the https://github.com/ciribob/DCS-SimpleRadioStandalone[DCS-SimpleRadioStandalone]
+* If you will support us https://www.paypal.me/jerkerdahlblom[Donate]
