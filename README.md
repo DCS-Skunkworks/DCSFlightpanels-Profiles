@@ -22,7 +22,7 @@ Contributors: BlackLibrary (aka WarLord), pdmarsh, Capt Zeen, BaD CrC, ron533, l
 
 -------------------------------------------------------------
 
-If you have some Profiles to share please contact me
+If you have some Profiles to share please contact me(WarLord) on our Discord Server
 
 -------------------------------------------------------------
 
@@ -40,6 +40,10 @@ PanelInstanceID=\\?\xyzxyzxyzxyzxyzxyzxyzxyzxyzxyzxyzxyzxyzxyzxy
 6. that will change the ID of the USB address that you plugged the Panel and should work now!
 
 
-https://github.com/ciribob/DCS-SimpleRadioStandalone[DCS-SimpleRadioStandalone]
-https://github.com/DCSFlightpanels/DCSFlightpanels[DCSFlightPanels]
-https://github.com/DCSFlightpanels/dcs-bios\[DCS-BIOS]
+== Support
+
+* We have a https://discord.gg/5svGwKX[Discord Server]
+* Here you find the https://github.com/DCSFlightpanels/DCSFlightpanels[DCSFlightPanels]
+* Here you find the https://github.com/DCSFlightpanels/dcs-bios[DCS-BIOS]
+* Here you find the https://github.com/ciribob/DCS-SimpleRadioStandalone[DCS-SimpleRadioStandalone]
+* If you will support us https://www.paypal.me/jerkerdahlblom[Donate]
