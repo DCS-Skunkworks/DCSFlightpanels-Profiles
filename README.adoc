@@ -19,9 +19,11 @@ Planes included:
 * Mi8
 * Mig-21Bis
 * P-51D / TF-51
+* Spitfire
 * UH1-H
 
-Contributors: BlackLibrary(aka WarLord), pdmarsh, Capt Zeen, BaD CrC, ron533, lizelong952, VirusAM, jusola
+Contributors: BlackLibrary(aka WarLord), pdmarsh, Capt Zeen, BaD CrC, ron533, lizelong952, VirusAM, jusola,
+              emcek
 
 == Instruction
 
