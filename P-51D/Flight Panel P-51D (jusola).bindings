@@ -1,0 +1,207 @@
+#This file can be manually edited using any ASCII editor.
+#File created on 10/5/2017 12:00:00 AM 10/5/2017 8:13:12 PM
+#  ***Do not change the location nor content of the line below***
+Airframe=P51D
+OperationLevelFlag=3
+
+PanelType=PZ70MultiPanel
+PanelInstanceID=\\?\hid#vid_06a3&pid_0d06#8&9048cc7&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}
+PanelSettingsVersion=2X
+BeginPanel
+	MultiPanelKnob{ALT}\o/{1FLAPS_LEVER_UP}\o/OSKeyPress{FiftyMilliSec,LCONTROL + VK_F}
+	MultiPanelKnob{ALT}\o/{1FLAPS_LEVER_DOWN}\o/OSKeyPress{FiftyMilliSec,VK_F}
+	MultiPanelKnob{ALT}\o/{1AP_BUTTON}\o/OSKeyPress{FiftyMilliSec,VK_A}
+	MultiPanelKnob{ALT}\o/{0AP_BUTTON}\o/OSKeyPress{FiftyMilliSec,LCONTROL + VK_9}
+	MultiPanelKnob{VS}\o/{1FLAPS_LEVER_UP}\o/OSKeyPress{FiftyMilliSec,LCONTROL + VK_F}
+	MultiPanelKnob{VS}\o/{1FLAPS_LEVER_DOWN}\o/OSKeyPress{FiftyMilliSec,VK_F}
+	MultiPanelKnob{VS}\o/{1AP_BUTTON}\o/OSKeyPress{FiftyMilliSec,VK_A}
+	MultiPanelKnob{VS}\o/{0AP_BUTTON}\o/OSKeyPress{FiftyMilliSec,LCONTROL + VK_9}
+	MultiPanelKnob{IAS}\o/{0AP_BUTTON}\o/OSKeyPress{FiftyMilliSec,LCONTROL + VK_9}
+	MultiPanelKnob{HDG}\o/{0AP_BUTTON}\o/OSKeyPress{FiftyMilliSec,LCONTROL + VK_9}
+	MultiPanelKnob{IAS}\o/{1AP_BUTTON}\o/OSKeyPress{FiftyMilliSec,VK_A}
+	MultiPanelKnob{HDG}\o/{1AP_BUTTON}\o/OSKeyPress{FiftyMilliSec,VK_A}
+	MultiPanelKnob{IAS}\o/{1FLAPS_LEVER_UP}\o/OSKeyPress{FiftyMilliSec,LCONTROL + VK_F}
+	MultiPanelKnob{HDG}\o/{1FLAPS_LEVER_UP}\o/OSKeyPress{FiftyMilliSec,LCONTROL + VK_F}
+	MultiPanelKnob{HDG}\o/{1FLAPS_LEVER_DOWN}\o/OSKeyPress{FiftyMilliSec,VK_F}
+	MultiPanelKnob{IAS}\o/{1FLAPS_LEVER_DOWN}\o/OSKeyPress{FiftyMilliSec,VK_F}
+	MultiPanelDCSBIOSControlLCD{ALT}\o/{UpperLCD}\o/DCSBiosOutput{ALT_MSL_FT|Equals|0}
+	MultiPanelDCSBIOSControlLCD{ALT}\o/{LowerLCD}\o/DCSBiosOutput{AIRSPEED_MPH_VALUE|Equals|0}
+EndPanel
+
+
+#--------------------------------------------------------------------
+#Below are all the Virtual Keycodes in use listed. You can manually edit this file using these codes.
+#	LBUTTON
+#	RBUTTON
+#	CANCEL
+#	MBUTTON
+#	XBUTTON1
+#	XBUTTON2
+#	BACK
+#	TAB
+#	CLEAR
+#	RETURN
+#	SHIFT
+#	CONTROL
+#	MENU
+#	PAUSE
+#	CAPITAL
+#	KANA
+#	HANGEUL
+#	HANGUL
+#	JUNJA
+#	FINAL
+#	HANJA
+#	KANJI
+#	ESCAPE
+#	CONVERT
+#	NONCONVERT
+#	ACCEPT
+#	MODECHANGE
+#	SPACE
+#	PRIOR
+#	NEXT
+#	END
+#	HOME
+#	LEFT
+#	UP
+#	RIGHT
+#	DOWN
+#	SELECT
+#	PRINT
+#	EXECUTE
+#	SNAPSHOT
+#	INSERT
+#	DELETE
+#	HELP
+#	VK_0
+#	VK_1
+#	VK_2
+#	VK_3
+#	VK_4
+#	VK_5
+#	VK_6
+#	VK_7
+#	VK_8
+#	VK_9
+#	VK_A
+#	VK_B
+#	VK_C
+#	VK_D
+#	VK_E
+#	VK_F
+#	VK_G
+#	VK_H
+#	VK_I
+#	VK_J
+#	VK_K
+#	VK_L
+#	VK_M
+#	VK_N
+#	VK_O
+#	VK_P
+#	VK_Q
+#	VK_R
+#	VK_S
+#	VK_T
+#	VK_U
+#	VK_V
+#	VK_W
+#	VK_X
+#	VK_Y
+#	VK_Z
+#	LWIN
+#	RWIN
+#	APPS
+#	SLEEP
+#	NUMPAD0
+#	NUMPAD1
+#	NUMPAD2
+#	NUMPAD3
+#	NUMPAD4
+#	NUMPAD5
+#	NUMPAD6
+#	NUMPAD7
+#	NUMPAD8
+#	NUMPAD9
+#	MULTIPLY
+#	ADD
+#	SEPARATOR
+#	SUBTRACT
+#	DECIMAL
+#	DIVIDE
+#	F1
+#	F2
+#	F3
+#	F4
+#	F5
+#	F6
+#	F7
+#	F8
+#	F9
+#	F10
+#	F11
+#	F12
+#	F13
+#	F14
+#	F15
+#	F16
+#	F17
+#	F18
+#	F19
+#	F20
+#	F21
+#	F22
+#	F23
+#	F24
+#	NUMLOCK
+#	SCROLL
+#	LSHIFT
+#	RSHIFT
+#	LCONTROL
+#	RCONTROL
+#	LMENU
+#	RMENU
+#	BROWSER_BACK
+#	BROWSER_FORWARD
+#	BROWSER_REFRESH
+#	BROWSER_STOP
+#	BROWSER_SEARCH
+#	BROWSER_FAVORITES
+#	BROWSER_HOME
+#	VOLUME_MUTE
+#	VOLUME_DOWN
+#	VOLUME_UP
+#	MEDIA_NEXT_TRACK
+#	MEDIA_PREV_TRACK
+#	MEDIA_STOP
+#	MEDIA_PLAY_PAUSE
+#	LAUNCH_MAIL
+#	LAUNCH_MEDIA_SELECT
+#	LAUNCH_APP1
+#	LAUNCH_APP2
+#	OEM_1
+#	OEM_PLUS
+#	OEM_COMMA
+#	OEM_MINUS
+#	OEM_PERIOD
+#	OEM_2
+#	OEM_3
+#	OEM_4
+#	OEM_5
+#	OEM_6
+#	OEM_7
+#	OEM_8
+#	OEM_102
+#	PROCESSKEY
+#	PACKET
+#	ATTN
+#	CRSEL
+#	EXSEL
+#	EREOF
+#	PLAY
+#	ZOOM
+#	NONAME
+#	PA1
+#	OEM_CLEAR
+
