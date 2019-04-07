@@ -21,7 +21,7 @@ Planes included:
 * P-51D / TF-51
 * UH1-H
 
-Contributors: BlackLibrary(aka WarLord), pdmarsh, Capt Zeen, BaD CrC, ron533, lizelong952, VirusAM
+Contributors: BlackLibrary(aka WarLord), pdmarsh, Capt Zeen, BaD CrC, ron533, lizelong952, VirusAM, jusola
 
 == Instruction
 
