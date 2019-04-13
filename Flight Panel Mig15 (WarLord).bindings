@@ -8,7 +8,7 @@
 #Open text editor and delete the LCONTROL ==> RMENU + HOME
 
 #  ***Do not change the location nor content of the line below***
-Airframe=Mig15Bis
+Airframe=Mig15bis
 OperationLevelFlag=3
 
 
