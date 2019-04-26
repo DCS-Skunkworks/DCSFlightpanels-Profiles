@@ -42,7 +42,7 @@ PanelInstanceID=\\?\xyzxyzxyzxyzxyzxyzxyzxyzxyzxyzxyzxyzxyzxyzxy
 == Support
 
 * If you have some Profiles to share please contact me(WarLord) on our Discord Server
-* We have a https://discord.gg/5svGwKX[Discord Server]
+* Here you find our https://discord.gg/5svGwKX[DCSFlightpanels Discord Server]
 * Here you find the https://github.com/DCSFlightpanels/DCSFlightpanels[DCSFlightPanels]
 * Here you find the https://github.com/DCSFlightpanels/dcs-bios[DCS-BIOS]
 * Here you find the https://github.com/ciribob/DCS-SimpleRadioStandalone[DCS-SimpleRadioStandalone]
