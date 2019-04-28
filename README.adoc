@@ -46,4 +46,4 @@ PanelInstanceID=\\?\xyzxyzxyzxyzxyzxyzxyzxyzxyzxyzxyzxyzxyzxyzxy
 * Here you find the https://github.com/DCSFlightpanels/DCSFlightpanels[DCSFlightPanels]
 * Here you find the https://github.com/DCSFlightpanels/dcs-bios[DCS-BIOS]
 * Here you find the https://github.com/ciribob/DCS-SimpleRadioStandalone[DCS-SimpleRadioStandalone]
-* If you want to support us https://www.paypal.me/jerkerdahlblom[Donate]
+* If you want to support us: https://www.paypal.me/jerkerdahlblom[Here] you can Donate.
