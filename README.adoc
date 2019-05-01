@@ -9,6 +9,7 @@ Planes included:
 
 * A-10C
 * AV8BNA
+* C-101CC
 * F-14B
 * F/A-18C
 * F5-E 
@@ -23,7 +24,7 @@ Planes included:
 * UH1-H
 
 Contributors: BlackLibrary(aka WarLord), pdmarsh, Capt Zeen, BaD CrC, ron533, lizelong952, VirusAM, jusola,
-              emcek
+              emcek, Valrond
 
 == Instruction
 
