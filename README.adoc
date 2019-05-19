@@ -8,9 +8,12 @@ Collection of Profiles for Flightpanels (DCS WORLD)
 Planes included:
 
 * A-10C
+* AJS37
 * AV8BNA
-* C-101CC
+* C-101CC / EB
+* Christen Eagle II
 * F-14B
+* F-86 Sabre
 * F/A-18C
 * F5-E 
 * FC3 (F-15)+SRS - (optimized for F-15 works with all FC3) DCS-SimpleRadioStandalone
@@ -20,11 +23,12 @@ Planes included:
 * Mi8
 * Mig-21Bis
 * P-51D / TF-51
+* SA342M
 * Spitfire
 * UH1-H
 
 Contributors: BlackLibrary(aka WarLord), pdmarsh, Capt Zeen, BaD CrC, ron533, lizelong952, VirusAM, jusola,
-              emcek, Valrond, Saylors
+              emcek, Valrond, Saylors, PEEP
 
 == Instruction
 
