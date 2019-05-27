@@ -1,0 +1,219 @@
+#This file can be manually edited using any ASCII editor.
+#File created on 25/05/2019 00:00:00 25/05/2019 00:12:53#
+#
+#IMPORTANT INFO REGARDING the keyboard key AltGr (RAlt as named in DCS) or RMENU as named DCSFP
+#When you press AltGr DCSFP will register RMENU + LCONTROL. This is a bug which "just is". You need to modify that in the profile
+#by deleting the + LCONTROL part.
+#So for example AltGr + HOME pressed on the keyboard becomes RMENU + LCONTROL + HOME
+#Open text editor and delete the LCONTROL ==> RMENU + HOME
+
+#  ***Do not change the location nor content of the line below***
+Airframe=P51D
+OperationLevelFlag=3
+
+
+PanelType=PZ70MultiPanel
+PanelInstanceID=\\?\hid#vid_06a3&pid_0d06#7&4c708ca&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}
+PanelSettingsVersion=2X
+BeginPanel
+	MultiPanelDCSBIOSControl{ALT}\o/{1FLAPS_LEVER_UP|Flaps Up (Step)}\o/\o/DCSBIOSInput{FLAPS_CONTROL_HANDLE|VARIABLE_STEP|5000|0}
+	MultiPanelDCSBIOSControl{ALT}\o/{1FLAPS_LEVER_DOWN|Flaps Down (Step)}\o/\o/DCSBIOSInput{FLAPS_CONTROL_HANDLE|VARIABLE_STEP|-5000|0}
+	MultiPanelDCSBIOSControl{ALT}\o/{1PITCH_TRIM_WHEEL_UP|Trim Up (Step)}\o/\o/DCSBIOSInput{ELEVATOR_TRIM|VARIABLE_STEP|5000|0}
+	MultiPanelDCSBIOSControl{ALT}\o/{1PITCH_TRIM_WHEEL_DOWN|Trim Down (Step)}\o/\o/DCSBIOSInput{ELEVATOR_TRIM|VARIABLE_STEP|-5000|0}
+	MultiPanelDCSBIOSControl{ALT}\o/{1LCD_WHEEL_DEC|Left Rudder Trim}\o/\o/DCSBIOSInput{RUDDER_TRIM|VARIABLE_STEP|-5000|0}
+	MultiPanelDCSBIOSControl{ALT}\o/{1LCD_WHEEL_INC|Right Rudder Trim}\o/\o/DCSBIOSInput{RUDDER_TRIM|VARIABLE_STEP|5000|0}
+	MultiPanelDCSBIOSControl{ALT}\o/{1HDG_BUTTON|Fuel Booster On}\o/\o/DCSBIOSInput{FUEL_BOOSTER|SET_STATE|1|0}
+	MultiPanelDCSBIOSControl{ALT}\o/{0HDG_BUTTON|Fuel Booster Off}\o/\o/DCSBIOSInput{FUEL_BOOSTER|SET_STATE|0|0}
+	MultiPanelDCSBIOSControl{ALT}\o/{1NAV_BUTTON|Ignition Both}\o/\o/DCSBIOSInput{IGNITION|SET_STATE|3|0}
+	MultiPanelDCSBIOSControl{ALT}\o/{0NAV_BUTTON|Ignition Off}\o/\o/DCSBIOSInput{IGNITION|SET_STATE|0|0}
+	MultiPanelDCSBIOSControl{ALT}\o/{1AP_BUTTON|Gen+Battery On}\o/\o/DCSBIOSInput{GEN|SET_STATE|1|0}\o/DCSBIOSInput{BAT|SET_STATE|1|0}
+	MultiPanelDCSBIOSControl{ALT}\o/{0AP_BUTTON|Gen+Battery Off}\o/\o/DCSBIOSInput{GEN|SET_STATE|0|0}\o/DCSBIOSInput{BAT|SET_STATE|0|0}
+	MultiPanelDCSBIOSControl{ALT}\o/{1IAS_BUTTON|Fuel Shut-Off On}\o/\o/DCSBIOSInput{FUEL_SHUT_OFF_VALVE|SET_STATE|1|0}
+	MultiPanelDCSBIOSControl{ALT}\o/{0IAS_BUTTON|Fuel Shut-Off Off}\o/\o/DCSBIOSInput{FUEL_SHUT_OFF_VALVE|SET_STATE|0|0}
+	MultiPanelDCSBIOSControl{ALT}\o/{1AUTO_THROTTLE|Starter On}\o/\o/DCSBIOSInput{STARTER_COVER|SET_STATE|1|0}\o/DCSBIOSInput{MIXTURE_CONTROL|SET_STATE|0|0}\o/DCSBIOSInput{STARTER|SET_STATE|1|0}
+	MultiPanelDCSBIOSControl{ALT}\o/{0AUTO_THROTTLE|Starter Off}\o/\o/DCSBIOSInput{STARTER|SET_STATE|0|0}\o/DCSBIOSInput{MIXTURE_CONTROL|SET_STATE|1|0}\o/DCSBIOSInput{STARTER_COVER|SET_STATE|0|0}
+	MultiPanelDCSBIOSControl{ALT}\o/{1APR_BUTTON|Nav Lights Dim}\o/\o/DCSBIOSInput{TAIL_LTS|SET_STATE|0|0}\o/DCSBIOSInput{WING_LTS|SET_STATE|0|0}
+	MultiPanelDCSBIOSControl{ALT}\o/{0APR_BUTTON|Nav Lights Off}\o/\o/DCSBIOSInput{TAIL_LTS|SET_STATE|1|0}\o/DCSBIOSInput{WING_LTS|SET_STATE|1|0}
+	MultiPanelDCSBIOSControlLCD{ALT}\o/{UpperLCD}\o/DCSBiosOutput{ALTIMETER_VALUE|Equals|0}
+	MultiPanelDCSBIOSControlLCD{ALT}\o/{LowerLCD}\o/DCSBiosOutput{AIRSPEED_MPH_VALUE|Equals|0}
+EndPanel
+
+
+
+
+#--------------------------------------------------------------------
+#Below are all the Virtual Keycodes in use listed. You can manually edit this file using these codes.
+#	LBUTTON
+#	RBUTTON
+#	CANCEL
+#	MBUTTON
+#	XBUTTON1
+#	XBUTTON2
+#	BACK
+#	TAB
+#	CLEAR
+#	RETURN
+#	SHIFT
+#	CONTROL
+#	MENU
+#	PAUSE
+#	CAPITAL
+#	KANA
+#	HANGEUL
+#	HANGUL
+#	JUNJA
+#	FINAL
+#	HANJA
+#	KANJI
+#	ESCAPE
+#	CONVERT
+#	NONCONVERT
+#	ACCEPT
+#	MODECHANGE
+#	SPACE
+#	PRIOR
+#	NEXT
+#	END
+#	HOME
+#	LEFT
+#	UP
+#	RIGHT
+#	DOWN
+#	SELECT
+#	PRINT
+#	EXECUTE
+#	SNAPSHOT
+#	INSERT
+#	DELETE
+#	HELP
+#	VK_0
+#	VK_1
+#	VK_2
+#	VK_3
+#	VK_4
+#	VK_5
+#	VK_6
+#	VK_7
+#	VK_8
+#	VK_9
+#	VK_A
+#	VK_B
+#	VK_C
+#	VK_D
+#	VK_E
+#	VK_F
+#	VK_G
+#	VK_H
+#	VK_I
+#	VK_J
+#	VK_K
+#	VK_L
+#	VK_M
+#	VK_N
+#	VK_O
+#	VK_P
+#	VK_Q
+#	VK_R
+#	VK_S
+#	VK_T
+#	VK_U
+#	VK_V
+#	VK_W
+#	VK_X
+#	VK_Y
+#	VK_Z
+#	LWIN
+#	RWIN
+#	APPS
+#	SLEEP
+#	NUMPAD0
+#	NUMPAD1
+#	NUMPAD2
+#	NUMPAD3
+#	NUMPAD4
+#	NUMPAD5
+#	NUMPAD6
+#	NUMPAD7
+#	NUMPAD8
+#	NUMPAD9
+#	MULTIPLY
+#	ADD
+#	SEPARATOR
+#	SUBTRACT
+#	DECIMAL
+#	DIVIDE
+#	F1
+#	F2
+#	F3
+#	F4
+#	F5
+#	F6
+#	F7
+#	F8
+#	F9
+#	F10
+#	F11
+#	F12
+#	F13
+#	F14
+#	F15
+#	F16
+#	F17
+#	F18
+#	F19
+#	F20
+#	F21
+#	F22
+#	F23
+#	F24
+#	NUMLOCK
+#	SCROLL
+#	LSHIFT
+#	RSHIFT
+#	LCONTROL
+#	RCONTROL
+#	LMENU
+#	RMENU
+#	BROWSER_BACK
+#	BROWSER_FORWARD
+#	BROWSER_REFRESH
+#	BROWSER_STOP
+#	BROWSER_SEARCH
+#	BROWSER_FAVORITES
+#	BROWSER_HOME
+#	VOLUME_MUTE
+#	VOLUME_DOWN
+#	VOLUME_UP
+#	MEDIA_NEXT_TRACK
+#	MEDIA_PREV_TRACK
+#	MEDIA_STOP
+#	MEDIA_PLAY_PAUSE
+#	LAUNCH_MAIL
+#	LAUNCH_MEDIA_SELECT
+#	LAUNCH_APP1
+#	LAUNCH_APP2
+#	OEM_1
+#	OEM_PLUS
+#	OEM_COMMA
+#	OEM_MINUS
+#	OEM_PERIOD
+#	OEM_2
+#	OEM_3
+#	OEM_4
+#	OEM_5
+#	OEM_6
+#	OEM_7
+#	OEM_8
+#	OEM_102
+#	PROCESSKEY
+#	PACKET
+#	ATTN
+#	CRSEL
+#	EXSEL
+#	EREOF
+#	PLAY
+#	ZOOM
+#	NONAME
+#	PA1
+#	OEM_CLEAR
+
