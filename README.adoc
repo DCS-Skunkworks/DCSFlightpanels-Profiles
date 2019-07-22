@@ -18,8 +18,8 @@ Planes included:
 * F5-E 
 * FC3 (F-15)+SRS - (optimized for F-15 works with all FC3) DCS-SimpleRadioStandalone
 * Ka50
+* L-39C
 * L-39ZA
-* L-39C 
 * M-2000C
 * Mi8
 * Mig-21Bis
