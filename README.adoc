@@ -20,6 +20,7 @@ Planes included:
 * Ka50
 * L-39ZA
 * L-39C 
+* M-2000C
 * Mi8
 * Mig-21Bis
 * P-51D / TF-51
@@ -28,7 +29,7 @@ Planes included:
 * UH1-H
 
 Contributors: BlackLibrary(aka WarLord), pdmarsh, Capt Zeen, BaD CrC, ron533, lizelong952, VirusAM, jusola,
-              emcek, Valrond, Saylors, PEEP, Fallen_Tyrael
+              emcek, Valrond, Saylors, PEEP, Fallen_Tyrael, Maclaw
 
 == Instruction
 
