@@ -29,7 +29,7 @@ Planes included:
 * UH1-H
 
 Contributors: BlackLibrary(aka WarLord), pdmarsh, Capt Zeen, BaD CrC, ron533, lizelong952, VirusAM, jusola,
-              emcek, Valrond, Saylors, PEEP, Fallen_Tyrael, Maclaw
+              emcek, Valrond, Saylors, PEEP, Fallen_Tyrael, Maclaw, Bazmus
 
 == Instruction
 
