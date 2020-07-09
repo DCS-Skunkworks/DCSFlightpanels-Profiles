@@ -47,7 +47,7 @@ PanelInstanceID=\\?\xyzxyzxyzxyzxyzxyzxyzxyzxyzxyzxyzxyzxyzxyzxy
 
 == Support
 
-* If you have some Profiles to share please contact me(WarLord) on our Discord Server
+* If you have some Profiles to share please contact me (WarLord) on our Discord Server
 * Here you find our https://discord.gg/5svGwKX[DCSFlightpanels Discord Server]
 * Here you find the https://github.com/DCSFlightpanels/DCSFlightpanels[DCSFlightPanels]
 * Here you find the https://github.com/DCSFlightpanels/dcs-bios[DCS-BIOS]
