@@ -1,5 +1,5 @@
 #This file can be manually edited using any ASCII editor.
-#File created on 04.03.2021 0:00:00 04.03.2021 21:15:05#
+#File created on 07.03.2021 0:00:00 07.03.2021 23:50:38#
 #
 #IMPORTANT INFO REGARDING the keyboard key AltGr (RAlt as named in DCS) or RMENU as named DCSFP
 #When you press AltGr DCSFP will register RMENU + LCONTROL. This is a bug which "just is". You need to modify that in the profile
@@ -36,7 +36,7 @@ BeginPanel
 	SwitchPanelDCSBIOSControl{1KNOB_ENGINE_BOTH|Magneto (Both)}\o/\o/DCSBIOSInput{MAGNETO_SEL|SET_STATE|3|0}\o/DCSBIOSInput{MSB_DILUTE|SET_STATE|0|1000}\o/DCSBIOSInput{STARTER_SW|SET_STATE|1|500}
 	SwitchPanelDCSBIOSControl{1SWITCHKEY_PITOT_HEAT|Pitot (On)}\o/\o/DCSBIOSInput{MSB_PITOT|SET_STATE|1|0}
 	SwitchPanelDCSBIOSControl{0SWITCHKEY_PITOT_HEAT|Pitot (Off)}\o/\o/DCSBIOSInput{MSB_PITOT|SET_STATE|0|0}
-	SwitchPanelDCSBIOSControl{1KNOB_ENGINE_START|Starter/Mixture}\o/\o/DCSBIOSInput{STARTER_SW|SET_STATE|2|100}\o/DCSBIOSInput{STARTER_SW|SET_STATE|1|100}\o/DCSBIOSInput{STARTER_SW|SET_STATE|0|500}\o/DCSBIOSInput{STARTER_SW|SET_STATE|2|5000}\o/DCSBIOSInput{MIX_LVR|SET_STATE|60000|2000}
+	SwitchPanelDCSBIOSControl{1KNOB_ENGINE_START|Starter/Mixture}\o/\o/DCSBIOSInput{STARTER_SW|SET_STATE|2|100}\o/DCSBIOSInput{STARTER_SW|SET_STATE|1|100}\o/DCSBIOSInput{STARTER_SW|SET_STATE|0|500}\o/DCSBIOSInput{STARTER_SW|SET_STATE|2|5000}\o/DCSBIOSInput{MIX_LVR|SET_STATE|60000|3000}
 	SwitchPanelDCSBIOSControl{1SWITCHKEY_LIGHTS_STROBE|Guns & Camera (On)}\o/\o/DCSBIOSInput{GUNS_SW_C|SET_STATE|1|0}\o/DCSBIOSInput{GUNS_SW|SET_STATE|0|500}\o/DCSBIOSInput{MSB_GUNSIGHT|VARIABLE_STEP|65535|1000}
 	SwitchPanelDCSBIOSControl{0SWITCHKEY_LIGHTS_STROBE|Guns & Camera (Off)}\o/\o/DCSBIOSInput{MSB_GUNSIGHT|VARIABLE_STEP|0|1000}\o/DCSBIOSInput{GUNS_SW_C|SET_STATE|0|1000}
 	SwitchPanelDCSBIOSControl{1SWITCHKEY_LIGHTS_LANDING|Landing (On)}\o/\o/DCSBIOSInput{MSB_LANDING|SET_STATE|2|0}
@@ -66,6 +66,12 @@ BeginPanel
 	SwitchPanelLedLeft{DARK|DCSBiosOutput{GEAR_RD_L|Equals|0}}
 	SwitchPanelLedLeft{GREEN|DCSBiosOutput{GEAR_GN_L|Equals|1}}
 	ManualLandingGearLEDs{False}
+EndPanel
+
+PanelType=PZ69RadioPanel
+PanelInstanceID=\\?\hid#vid_06a3&pid_0d05#8&3118acb7&1&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}
+BindingHash=efa3f1ca3957093d6c8008301d00bf5b
+BeginPanel
 EndPanel
 
 
