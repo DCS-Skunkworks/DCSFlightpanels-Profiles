@@ -1,20 +1,28 @@
 #This file can be manually edited using any ASCII editor.
-#File created on 03.05.2019 0:00:00 03.05.2019 22:13:46#
+#File created on 08.03.2021 0:00:00 08.03.2021 0:10:57#
 #
 #IMPORTANT INFO REGARDING the keyboard key AltGr (RAlt as named in DCS) or RMENU as named DCSFP
 #When you press AltGr DCSFP will register RMENU + LCONTROL. This is a bug which "just is". You need to modify that in the profile
 #by deleting the + LCONTROL part.
 #So for example AltGr + HOME pressed on the keyboard becomes RMENU + LCONTROL + HOME
 #Open text editor and delete the LCONTROL ==> RMENU + HOME
+#Supported panels :
+#   PZ55SwitchPanel
+#   PZ69RadioPanel
+#   PZ70MultiPanel
+#   BackLitPanel
+#   StreamDeckMini
+#   StreamDeck
+#   StreamDeckXL
 
 #  ***Do not change the location nor content of the line below***
-Airframe=SpitfireLFMkIX
+Profile=37
 OperationLevelFlag=3
-
+UseGenericRadio=False
 
 PanelType=PZ55SwitchPanel
-PanelInstanceID=\\?\hid#vid_06a3&pid_0d67#8&55da89&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}
-PanelSettingsVersion=0X
+PanelInstanceID=\\?\hid#vid_06a3&pid_0d67#8&39410808&1&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}
+BindingHash=2f80042f7f4cde7df42f733014fe6c33
 BeginPanel
 	SwitchPanelDCSBIOSControl{1SWITCHKEY_LIGHTS_NAV|Nav. Lights On}\o/\o/DCSBIOSInput{NAV_LIGHTS|SET_STATE|1|0}
 	SwitchPanelDCSBIOSControl{0SWITCHKEY_LIGHTS_NAV|Nav. Lights Off}\o/\o/DCSBIOSInput{NAV_LIGHTS|SET_STATE|0|0}
@@ -31,12 +39,12 @@ BeginPanel
 	SwitchPanelDCSBIOSControl{1SWITCHKEY_LIGHTS_STROBE|Gunsight Master On}\o/\o/DCSBIOSInput{GUNSIGHT_SWITCH|SET_STATE|1|0}
 	SwitchPanelDCSBIOSControl{0SWITCHKEY_LIGHTS_STROBE|Gunsight Master Off}\o/\o/DCSBIOSInput{GUNSIGHT_SWITCH|SET_STATE|0|0}
 	SwitchPanelDCSBIOSControl{1KNOB_ENGINE_RIGHT|Magneto 1 On}\o/\o/DCSBIOSInput{MAGNETO0|SET_STATE|1|0}
-	SwitchPanelDCSBIOSControl{1KNOB_ENGINE_LEFT|Magneto 2 On}\o/\o/DCSBIOSInput{MAGNETO1|SET_STATE|1|0}\o/DCSBIOSInput{MIX|SET_STATE|0|0}
+	SwitchPanelDCSBIOSControl{1KNOB_ENGINE_LEFT|Magneto 2 On}\o/\o/DCSBIOSInput{MAGNETO1|SET_STATE|1|0}\o/DCSBIOSInput{MIX|SET_STATE|0|1000}
 	SwitchPanelDCSBIOSControl{1SWITCHKEY_MASTER_BAT|U/C Indicator On}\o/\o/DCSBIOSInput{UC_DOWN_C|SET_STATE|1|0}
 	SwitchPanelDCSBIOSControl{0SWITCHKEY_MASTER_BAT|U/C Indicator Off}\o/\o/DCSBIOSInput{UC_DOWN_C|SET_STATE|0|0}
-	SwitchPanelDCSBIOSControl{1KNOB_ENGINE_BOTH|Starter/Booster Off}\o/\o/DCSBIOSInput{STARTER|SET_STATE|0|50}\o/DCSBIOSInput{BOOSTER|SET_STATE|0|50}\o/DCSBIOSInput{STARTER_COVER|SET_STATE|0|500}\o/DCSBIOSInput{BOOSTER_COVER|SET_STATE|0|500}
+	SwitchPanelDCSBIOSControl{1KNOB_ENGINE_BOTH|Starter/Booster Off}\o/\o/DCSBIOSInput{STARTER|SET_STATE|0|50}\o/DCSBIOSInput{BOOSTER|SET_STATE|0|0}\o/DCSBIOSInput{STARTER_COVER|SET_STATE|0|500}\o/DCSBIOSInput{BOOSTER_COVER|SET_STATE|0|0}
 	SwitchPanelDCSBIOSControl{1KNOB_ENGINE_OFF|OFF}\o/\o/DCSBIOSInput{MAGNETO0|SET_STATE|0|0}\o/DCSBIOSInput{MAGNETO1|SET_STATE|0|0}
-	SwitchPanelDCSBIOSControl{1KNOB_ENGINE_START|Starter/Booster On}\o/\o/DCSBIOSInput{STARTER_COVER|SET_STATE|1|100}\o/DCSBIOSInput{BOOSTER_COVER|SET_STATE|1|100}\o/DCSBIOSInput{STARTER|SET_STATE|1|500}\o/DCSBIOSInput{BOOSTER|SET_STATE|1|500}\o/DCSBIOSInput{MIX|SET_STATE|1|4000}
+	SwitchPanelDCSBIOSControl{1KNOB_ENGINE_START|Starter/Booster On}\o/\o/DCSBIOSInput{STARTER_COVER|SET_STATE|1|100}\o/DCSBIOSInput{BOOSTER_COVER|SET_STATE|1|0}\o/DCSBIOSInput{STARTER|SET_STATE|1|500}\o/DCSBIOSInput{BOOSTER|SET_STATE|1|0}\o/DCSBIOSInput{MIX|SET_STATE|1|3000}
 	SwitchPanelDCSBIOSControl{1SWITCHKEY_MASTER_ALT|Main Tank On}\o/\o/DCSBIOSInput{FUEL_COCK|SET_STATE|1|0}
 	SwitchPanelDCSBIOSControl{0SWITCHKEY_MASTER_ALT|Main Tank Off}\o/\o/DCSBIOSInput{FUEL_COCK|SET_STATE|0|0}
 	SwitchPanelDCSBIOSControl{1SWITCHKEY_AVIONICS_MASTER|Fuel Tank Press. On}\o/\o/DCSBIOSInput{TANK_PRS|SET_STATE|1|0}
@@ -55,6 +63,13 @@ BeginPanel
 	SwitchPanelLedLeft{GREEN|DCSBiosOutput{GEAR_DOWN|Equals|1}}
 	ManualLandingGearLEDs{False}
 EndPanel
+
+PanelType=PZ69RadioPanel
+PanelInstanceID=\\?\hid#vid_06a3&pid_0d05#8&3118acb7&1&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}
+BindingHash=6d9d1d3e98662b94619dbf475737b8f5
+BeginPanel
+EndPanel
+
 
 
 
@@ -234,4 +249,5 @@ EndPanel
 #	NONAME
 #	PA1
 #	OEM_CLEAR
+#	VK_NULL
 
