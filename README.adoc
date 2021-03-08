@@ -23,6 +23,7 @@ Planes included:
 * M-2000C
 * Mi8
 * Mig-21Bis
+* P-47D
 * P-51D / TF-51
 * SA342M
 * Spitfire
