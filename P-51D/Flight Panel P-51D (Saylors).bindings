@@ -17,7 +17,7 @@
 
 #  ***Do not change the location nor content of the line below***
 Profile=35
-OperationLevelFlag=3
+EmulationModesFlag=3
 UseGenericRadio=False
 
 PanelType=PZ55SwitchPanel
