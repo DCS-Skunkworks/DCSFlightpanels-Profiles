@@ -17,8 +17,8 @@
 
 #  ***Do not change the location nor content of the line below***
 Profile=34
-OperationLevelFlag=3
-UseGenericRadio=True
+EmulationModesFlag=3
+UseGenericRadio=False
 
 PanelType=PZ55SwitchPanel
 PanelInstanceID=\\?\hid#vid_06a3&pid_0d67#8&39410808&1&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}
