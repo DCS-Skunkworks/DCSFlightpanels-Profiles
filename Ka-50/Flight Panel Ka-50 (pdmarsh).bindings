@@ -46,15 +46,15 @@ EndPanel
 PanelType=PZ70MultiPanel
 PanelInstanceID=\\?\hid#vid_06a3&pid_0d06#7&175d3b7&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}
 BeginPanel
-	MultiPanelKnob{1HDG_BUTTON}\o/OSKeyPress{ThreeSeconds,LMENU + LCONTROL + LSHIFT + VK_P}
-	MultiPanelKnob{1FLAPS_LEVER_DOWN}\o/OSKeyPress{HalfSecond,VK_M}
-	MultiPanelKnob{1NAV_BUTTON}\o/OSKeyPress{FiftyMilliSec,RMENU + RCONTROL + VK_V}
-	MultiPanelKnob{1IAS_BUTTON}\o/OSKeyPress{TwoSeconds,LCONTROL + LSHIFT + VK_T}
-	MultiPanelKnob{1ALT_BUTTON}\o/OSKeyPress{ThreeSeconds,LMENU + LSHIFT + VK_R}
-	MultiPanelKnob{1VS_BUTTON}\o/OSKeyPress{Second,LMENU + LCONTROL + VK_N}
-	MultiPanelKnob{1FLAPS_LEVER_UP}\o/OSKeyPress{HalfSecond,VK_L}
-	MultiPanelKnob{0AUTO_THROTTLE}\o/OSKeyPress{INFORMATION=^Master Arm/Weapons Eject Arm Off^[FiftyMilliSec,LMENU + VK_W,FiftyMilliSec][FiftyMilliSec,LMENU + LSHIFT + VK_W,FiftyMilliSec]}
-	MultiPanelKnob{1AUTO_THROTTLE}\o/OSKeyPress{INFORMATION=^Master Arm/Weapons Eject Arm On^[FiftyMilliSec,LMENU + VK_W,FiftyMilliSec][FiftyMilliSec,LMENU + LSHIFT + VK_W,FiftyMilliSec]}
+	MultiPanelKnob{ALT}\o/{1HDG_BUTTON}\o/OSKeyPress{ThreeSeconds,LMENU + LCONTROL + LSHIFT + VK_P}
+	MultiPanelKnob{ALT}\o/{1FLAPS_LEVER_DOWN}\o/OSKeyPress{HalfSecond,VK_M}
+	MultiPanelKnob{ALT}\o/{1NAV_BUTTON}\o/OSKeyPress{FiftyMilliSec,RMENU + RCONTROL + VK_V}
+	MultiPanelKnob{ALT}\o/{1IAS_BUTTON}\o/OSKeyPress{TwoSeconds,LCONTROL + LSHIFT + VK_T}
+	MultiPanelKnob{ALT}\o/{1ALT_BUTTON}\o/OSKeyPress{ThreeSeconds,LMENU + LSHIFT + VK_R}
+	MultiPanelKnob{ALT}\o/{1VS_BUTTON}\o/OSKeyPress{Second,LMENU + LCONTROL + VK_N}
+	MultiPanelKnob{ALT}\o/{1FLAPS_LEVER_UP}\o/OSKeyPress{HalfSecond,VK_L}
+	MultiPanelKnob{ALT}\o/{0AUTO_THROTTLE}\o/OSKeyPress{INFORMATION=^Master Arm/Weapons Eject Arm Off^[FiftyMilliSec,LMENU + VK_W,FiftyMilliSec][FiftyMilliSec,LMENU + LSHIFT + VK_W,FiftyMilliSec]}
+	MultiPanelKnob{ALT}\o/{1AUTO_THROTTLE}\o/OSKeyPress{INFORMATION=^Master Arm/Weapons Eject Arm On^[FiftyMilliSec,LMENU + VK_W,FiftyMilliSec][FiftyMilliSec,LMENU + LSHIFT + VK_W,FiftyMilliSec]}
 EndPanel
 
 
