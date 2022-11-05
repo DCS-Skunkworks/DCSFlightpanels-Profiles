@@ -39,8 +39,8 @@ BeginPanel
 	SwitchPanelDCSBIOSControl{1SWITCHKEY_AVIONICS_MASTER|nav systems on}\o/\o/DCSBIOSInput{PPK800_INU_POWER|SET_STATE|1|0}\o/DCSBIOSInput{K041_POWER|SET_STATE|1|200}\o/DCSBIOSInput{NAV_POWER|SET_STATE|1|500}
 	SwitchPanelDCSBIOSControl{0SWITCHKEY_AVIONICS_MASTER|DCS-BIOS}\o/\o/DCSBIOSInput{PPK800_INU_POWER|SET_STATE|0|0}\o/DCSBIOSInput{K041_POWER|SET_STATE|0|200}\o/DCSBIOSInput{NAV_POWER|SET_STATE|0|500}
 	SwitchPanelLedUp{DARK|DCSBiosOutput{GEAR_NOSE_DOWN|Equals|0}}
-	SwitchPanelLedUp{RED|DCSBiosOutput{GEAR_NOSE__UP|Equals|1}}
-	SwitchPanelLedUp{DARK|DCSBiosOutput{GEAR_NOSE__UP|Equals|0}}
+	SwitchPanelLedUp{RED|DCSBiosOutput{GEAR_NOSE_UP|Equals|1}}
+	SwitchPanelLedUp{DARK|DCSBiosOutput{GEAR_NOSE_UP|Equals|0}}
 	SwitchPanelLedUp{GREEN|DCSBiosOutput{GEAR_NOSE_DOWN|Equals|1}}
 	SwitchPanelLedLeft{DARK|DCSBiosOutput{GEAR_L_MAIN_DOWN|Equals|0}}
 	SwitchPanelLedLeft{RED|DCSBiosOutput{GEAR_L_MAIN_UP|Equals|1}}
