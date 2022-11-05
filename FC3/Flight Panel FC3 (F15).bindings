@@ -1,0 +1,244 @@
+#This file can be manually edited using any ASCII editor.
+#File created on 10.11.2018 00:00:00 10.11.2018 17:30:26#
+#
+#IMPORTANT INFO REGARDING the keyboard key AltGr (RAlt as named in DCS) or RMENU as named DCSFP
+#When you press AltGr DCSFP will register RMENU + LCONTROL. This is a bug which "just is". You need to modify that in the profile
+#by deleting the + LCONTROL part.
+#So for example AltGr + HOME pressed on the keyboard becomes RMENU + LCONTROL + HOME
+#Open text editor and delete the LCONTROL ==> RMENU + HOME
+
+#  ***Do not change the location nor content of the line below***
+Profile=4
+EmulationModesFlag=2
+
+
+PanelType=PZ55SwitchPanel
+PanelInstanceID=\\?\hid#vid_06a3&pid_0d67#6&3d3d2c7&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}
+PanelSettingsVersion=0X
+BeginPanel
+	SwitchPanelKey{1LEVER_GEAR_DOWN}\o/OSKeyPress{FiftyMilliSec,LMENU + VK_G}
+	SwitchPanelKey{1LEVER_GEAR_UP}\o/OSKeyPress{FiftyMilliSec,LMENU + VK_G}
+	SwitchPanelKey{1SWITCHKEY_LIGHTS_PANEL}\o/OSKeyPress{FiftyMilliSec,VK_L}
+	SwitchPanelKey{0SWITCHKEY_LIGHTS_PANEL}\o/OSKeyPress{FiftyMilliSec,VK_L}
+	SwitchPanelKey{1SWITCHKEY_LIGHTS_NAV}\o/OSKeyPress{FiftyMilliSec,RCONTROL + VK_L}
+	SwitchPanelKey{0SWITCHKEY_LIGHTS_NAV}\o/OSKeyPress{FiftyMilliSec,RCONTROL + VK_L}
+	SwitchPanelKey{1SWITCHKEY_LIGHTS_STROBE}\o/OSKeyPress{FiftyMilliSec,RMENU + RCONTROL + VK_L}
+	SwitchPanelKey{0SWITCHKEY_LIGHTS_STROBE}\o/OSKeyPress{FiftyMilliSec,RMENU + RCONTROL + VK_L}
+	SwitchPanelKey{0SWITCHKEY_CLOSE_COWL}\o/OSKeyPress{FiftyMilliSec,LCONTROL + VK_C}
+	SwitchPanelKey{1SWITCHKEY_CLOSE_COWL}\o/OSKeyPress{FiftyMilliSec,LCONTROL + VK_C}
+	SwitchPanelKey{1SWITCHKEY_MASTER_BAT}\o/OSKeyPress{FiftyMilliSec,RSHIFT + VK_L}
+	SwitchPanelKey{0SWITCHKEY_MASTER_BAT}\o/OSKeyPress{FiftyMilliSec,RSHIFT + VK_L}
+	SwitchPanelKey{1SWITCHKEY_LIGHTS_TAXI}\o/OSKeyPress{FiftyMilliSec,RMENU + VK_L}
+	SwitchPanelKey{1SWITCHKEY_LIGHTS_LANDING}\o/OSKeyPress{FiftyMilliSec,RMENU + VK_L}
+	SwitchPanelKey{0SWITCHKEY_LIGHTS_TAXI}\o/OSKeyPress{FiftyMilliSec,RMENU + VK_L}
+	SwitchPanelKey{1KNOB_ENGINE_RIGHT}\o/OSKeyPress{FiftyMilliSec,LSHIFT + VK_D}
+	SwitchPanelKey{1KNOB_ENGINE_LEFT}\o/OSKeyPress{FiftyMilliSec,LSHIFT + VK_D}
+	SwitchPanelKey{1KNOB_ENGINE_BOTH}\o/OSKeyPress{FiftyMilliSec,LSHIFT + VK_D}
+	SwitchPanelKey{1KNOB_ENGINE_START}\o/OSKeyPress{FiftyMilliSec,LSHIFT + VK_D}
+	SwitchPanelKey{1KNOB_ENGINE_OFF}\o/OSKeyPress{FiftyMilliSec,LSHIFT + VK_D}
+	ManualLandingGearLEDs{False}
+EndPanel
+
+PanelType=PZ70MultiPanel
+PanelInstanceID=\\?\hid#vid_06a3&pid_0d06#6&7c8d2d0&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}
+PanelSettingsVersion=2X
+BeginPanel
+	MultiPanelKnob{ALT}\o/{1FLAPS_LEVER_UP}\o/OSKeyPress{FiftyMilliSec,LMENU + VK_G}
+	MultiPanelKnob{ALT}\o/{1FLAPS_LEVER_DOWN}\o/OSKeyPress{FiftyMilliSec,LMENU + VK_G}
+	MultiPanelKnob{ALT}\o/{1NAV_BUTTON}\o/OSKeyPress{FiftyMilliSec,VK_1}
+	MultiPanelKnob{ALT}\o/{1VS_BUTTON}\o/OSKeyPress{FiftyMilliSec,VK_2}
+	MultiPanelKnob{ALT}\o/{1AP_BUTTON}\o/OSKeyPress{FiftyMilliSec,VK_C}
+	MultiPanelKnob{ALT}\o/{0AP_BUTTON}\o/OSKeyPress{FiftyMilliSec,VK_C}
+	MultiPanelKnob{ALT}\o/{1PITCH_TRIM_WHEEL_UP}\o/OSKeyPress{FiftyMilliSec,RCONTROL + VK_Y}
+	MultiPanelKnob{ALT}\o/{1PITCH_TRIM_WHEEL_DOWN}\o/OSKeyPress{FiftyMilliSec,RCONTROL + VK_X}
+	MultiPanelKnob{ALT}\o/{1REV_BUTTON}\o/OSKeyPress{FiftyMilliSec,LMENU + VK_T}
+	MultiPanelKnob{ALT}\o/{0REV_BUTTON}\o/OSKeyPress{FiftyMilliSec,LMENU + VK_T}
+	MultiPanelKnob{ALT}\o/{1APR_BUTTON}\o/OSKeyPress{FiftyMilliSec,RCONTROL + VK_P}
+	MultiPanelKnob{ALT}\o/{0APR_BUTTON}\o/OSKeyPress{FiftyMilliSec,RCONTROL + VK_P}
+	MultiPanelKnob{ALT}\o/{0AUTO_THROTTLE}\o/OSKeyPress{FiftyMilliSec,LCONTROL + VK_R}
+	MultiPanelKnob{ALT}\o/{1AUTO_THROTTLE}\o/OSKeyPress{FiftyMilliSec,LCONTROL + VK_R}
+	MultiPanelKnob{ALT}\o/{1LCD_WHEEL_DEC}\o/OSKeyPress{FiftyMilliSec,LCONTROL + VK_D}
+	MultiPanelKnob{ALT}\o/{1LCD_WHEEL_INC}\o/OSKeyPress{FiftyMilliSec,LMENU + VK_D}
+	MultiPanelDCSBIOSControlLCD{ALT}\o/{LowerLCD}\o/DCSBiosOutput{ALT_MSL_FT|Equals|0}
+	MultiPanelDCSBIOSControlLCD{VS}\o/{LowerLCD}\o/DCSBiosOutput{HDG_DEG|Equals|0}
+EndPanel
+
+
+
+
+#--------------------------------------------------------------------
+#Below are all the Virtual Keycodes in use listed. You can manually edit this file using these codes.
+#	LBUTTON
+#	RBUTTON
+#	CANCEL
+#	MBUTTON
+#	XBUTTON1
+#	XBUTTON2
+#	BACK
+#	TAB
+#	CLEAR
+#	RETURN
+#	SHIFT
+#	CONTROL
+#	MENU
+#	PAUSE
+#	CAPITAL
+#	KANA
+#	HANGEUL
+#	HANGUL
+#	JUNJA
+#	FINAL
+#	HANJA
+#	KANJI
+#	ESCAPE
+#	CONVERT
+#	NONCONVERT
+#	ACCEPT
+#	MODECHANGE
+#	SPACE
+#	PRIOR
+#	NEXT
+#	END
+#	HOME
+#	LEFT
+#	UP
+#	RIGHT
+#	DOWN
+#	SELECT
+#	PRINT
+#	EXECUTE
+#	SNAPSHOT
+#	INSERT
+#	DELETE
+#	HELP
+#	VK_0
+#	VK_1
+#	VK_2
+#	VK_3
+#	VK_4
+#	VK_5
+#	VK_6
+#	VK_7
+#	VK_8
+#	VK_9
+#	VK_A
+#	VK_B
+#	VK_C
+#	VK_D
+#	VK_E
+#	VK_F
+#	VK_G
+#	VK_H
+#	VK_I
+#	VK_J
+#	VK_K
+#	VK_L
+#	VK_M
+#	VK_N
+#	VK_O
+#	VK_P
+#	VK_Q
+#	VK_R
+#	VK_S
+#	VK_T
+#	VK_U
+#	VK_V
+#	VK_W
+#	VK_X
+#	VK_Y
+#	VK_Z
+#	LWIN
+#	RWIN
+#	APPS
+#	SLEEP
+#	NUMPAD0
+#	NUMPAD1
+#	NUMPAD2
+#	NUMPAD3
+#	NUMPAD4
+#	NUMPAD5
+#	NUMPAD6
+#	NUMPAD7
+#	NUMPAD8
+#	NUMPAD9
+#	MULTIPLY
+#	ADD
+#	SEPARATOR
+#	SUBTRACT
+#	DECIMAL
+#	DIVIDE
+#	F1
+#	F2
+#	F3
+#	F4
+#	F5
+#	F6
+#	F7
+#	F8
+#	F9
+#	F10
+#	F11
+#	F12
+#	F13
+#	F14
+#	F15
+#	F16
+#	F17
+#	F18
+#	F19
+#	F20
+#	F21
+#	F22
+#	F23
+#	F24
+#	NUMLOCK
+#	SCROLL
+#	LSHIFT
+#	RSHIFT
+#	LCONTROL
+#	RCONTROL
+#	LMENU
+#	RMENU
+#	BROWSER_BACK
+#	BROWSER_FORWARD
+#	BROWSER_REFRESH
+#	BROWSER_STOP
+#	BROWSER_SEARCH
+#	BROWSER_FAVORITES
+#	BROWSER_HOME
+#	VOLUME_MUTE
+#	VOLUME_DOWN
+#	VOLUME_UP
+#	MEDIA_NEXT_TRACK
+#	MEDIA_PREV_TRACK
+#	MEDIA_STOP
+#	MEDIA_PLAY_PAUSE
+#	LAUNCH_MAIL
+#	LAUNCH_MEDIA_SELECT
+#	LAUNCH_APP1
+#	LAUNCH_APP2
+#	OEM_1
+#	OEM_PLUS
+#	OEM_COMMA
+#	OEM_MINUS
+#	OEM_PERIOD
+#	OEM_2
+#	OEM_3
+#	OEM_4
+#	OEM_5
+#	OEM_6
+#	OEM_7
+#	OEM_8
+#	OEM_102
+#	PROCESSKEY
+#	PACKET
+#	ATTN
+#	CRSEL
+#	EXSEL
+#	EREOF
+#	PLAY
+#	ZOOM
+#	NONAME
+#	PA1
+#	OEM_CLEAR
+
