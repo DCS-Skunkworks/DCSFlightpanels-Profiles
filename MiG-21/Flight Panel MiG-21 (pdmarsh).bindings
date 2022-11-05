@@ -54,10 +54,8 @@ EndPanel
 PanelType=PZ70MultiPanel
 PanelInstanceID=\\?\hid#vid_06a3&pid_0d06#9&16854338&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}
 BeginPanel
-	MultiPanelKnob{1FLAPS_LEVER_UP}\o/OSKeyPress{FiftyMilliSec,LSHIFT + VK_F}
-	MultiPanelKnob{1FLAPS_LEVER_DOWN}\o/OSKeyPress{FiftyMilliSec,VK_F}
-	MultiPanelDCSBIOSControlLCD{KNOB_ALT|UpperALT}\o/DCSBiosOutput{ALT_MSL_FT|Equals|0}
-	MultiPanelDCSBIOSControlLCD{KNOB_ALT|LowerALT}\o/DCSBiosOutput{HDG_DEG|Equals|0}
+	MultiPanelDCSBIOSControlLCD{ALT}\o/{UpperLCD}\o/DCSBiosOutput{ALT_MSL_FT|Equals|0}
+	MultiPanelDCSBIOSControlLCD{ALT}\o/{LowerLCD}\o/DCSBiosOutput{HDG_DEG|Equals|0}
 EndPanel
 
 
