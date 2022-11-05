@@ -1,11 +1,28 @@
 #This file can be manually edited using any ASCII editor.
-#File created on 4/13/2015 12:00:00 AM 4/13/2015 7:48:44 PM
-#  ***Do not change the location nor content of the line below***
-Airframe=UH1H
+#File created on 05/11/2022 0.00.00 05/11/2022 15.11.31#
+#
+#IMPORTANT INFO REGARDING the keyboard key AltGr (RAlt as named in DCS) or RMENU as named DCSFP
+#When you press AltGr DCSFP will register RMENU + LCONTROL. This is a bug which "just is". You need to modify that in the profile
+#by deleting the + LCONTROL part.
+#So for example AltGr + HOME pressed on the keyboard becomes RMENU + LCONTROL + HOME
+#Open text editor and delete the LCONTROL ==> RMENU + HOME
+#Supported panels :
+#   PZ55SwitchPanel
+#   PZ69RadioPanel
+#   PZ70MultiPanel
+#   BackLitPanel
+#   StreamDeckMini
+#   StreamDeck
+#   StreamDeckXL
 
+#  ***Do not change the location nor content of the line below***
+Profile=38
+EmulationModesFlag=3
+UseGenericRadio=False
 
 PanelType=PZ55SwitchPanel
-PanelInstanceID=\\?\hid#vid_06a3&pid_0d67#7&2e3b65ed&1&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}
+PanelInstanceID=\\?\hid#vid_06a3&pid_0d67#6&3d3d2c7&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}
+BindingHash=1ae8e09572e8110e95992fd4b9c06c0a
 BeginPanel
 	SwitchPanelKey{1SWITCHKEY_FUEL_PUMP}\o/OSKeyPress{FiftyMilliSec,VK_F}
 	SwitchPanelKey{0SWITCHKEY_FUEL_PUMP}\o/OSKeyPress{FiftyMilliSec,VK_F}
@@ -28,36 +45,41 @@ BeginPanel
 	SwitchPanelKey{0SWITCHKEY_LIGHTS_TAXI}\o/OSKeyPress{FiftyMilliSec,RCONTROL + VK_L}
 	SwitchPanelKey{1SWITCHKEY_LIGHTS_LANDING}\o/OSKeyPress{FiftyMilliSec,RSHIFT + VK_L}
 	SwitchPanelKey{0SWITCHKEY_LIGHTS_LANDING}\o/OSKeyPress{FiftyMilliSec,RSHIFT + VK_L}
-	SwitchPanelDCSBIOSControl{1SWITCHKEY_MASTER_BAT}\o/\o/DCSBIOSInput{BAT_SW|SET_STATE|0}
-	SwitchPanelDCSBIOSControl{0SWITCHKEY_MASTER_BAT}\o/\o/DCSBIOSInput{BAT_SW|SET_STATE|1}
-	SwitchPanelDCSBIOSControl{1SWITCHKEY_MASTER_ALT}\o/\o/DCSBIOSInput{INVERTER_SW|SET_STATE|0}
-	SwitchPanelDCSBIOSControl{0SWITCHKEY_MASTER_ALT}\o/\o/DCSBIOSInput{INVERTER_SW|SET_STATE|1}
-	SwitchPanelDCSBIOSControl{1SWITCHKEY_AVIONICS_MASTER}\o/\o/DCSBIOSInput{RADAR_ALT_PWR|SET_STATE|1}
-	SwitchPanelDCSBIOSControl{0SWITCHKEY_AVIONICS_MASTER}\o/\o/DCSBIOSInput{RADAR_ALT_PWR|SET_STATE|0}
-	SwitchPanelDCSBIOSControl{1SWITCHKEY_LIGHTS_BEACON}\o/\o/DCSBIOSInput{EMER_GOV_SW|SET_STATE|1}
-	SwitchPanelDCSBIOSControl{0SWITCHKEY_LIGHTS_BEACON}\o/\o/DCSBIOSInput{EMER_GOV_SW|SET_STATE|0}
+	SwitchPanelDCSBIOSControlV2{2}\o/{SWITCHKEY_MASTER_BAT|DCS-BIOS}\o/\o/DCSBIOSInput{BAT_SW|SET_STATE|0|0}
+	SwitchPanelDCSBIOSControlV2{0}\o/{SWITCHKEY_MASTER_BAT|DCS-BIOS}\o/\o/DCSBIOSInput{BAT_SW|SET_STATE|1|0}
+	SwitchPanelDCSBIOSControlV2{2}\o/{SWITCHKEY_MASTER_ALT|DCS-BIOS}\o/\o/DCSBIOSInput{INVERTER_SW|SET_STATE|0|0}
+	SwitchPanelDCSBIOSControlV2{0}\o/{SWITCHKEY_MASTER_ALT|DCS-BIOS}\o/\o/DCSBIOSInput{INVERTER_SW|SET_STATE|1|0}
+	SwitchPanelDCSBIOSControlV2{2}\o/{SWITCHKEY_AVIONICS_MASTER|DCS-BIOS}\o/\o/DCSBIOSInput{RADAR_ALT_PWR|SET_STATE|1|0}
+	SwitchPanelDCSBIOSControlV2{0}\o/{SWITCHKEY_AVIONICS_MASTER|DCS-BIOS}\o/\o/DCSBIOSInput{RADAR_ALT_PWR|SET_STATE|0|0}
+	SwitchPanelDCSBIOSControlV2{2}\o/{SWITCHKEY_LIGHTS_BEACON|DCS-BIOS}\o/\o/DCSBIOSInput{EMER_GOV_SW|SET_STATE|1|0}
+	SwitchPanelDCSBIOSControlV2{0}\o/{SWITCHKEY_LIGHTS_BEACON|DCS-BIOS}\o/\o/DCSBIOSInput{EMER_GOV_SW|SET_STATE|0|0}
+	ManualLandingGearLEDs{False}
+	ManualLandingGearLedsColorUp{DARK}
+	ManualLandingGearLedsColorDown{GREEN}
+	ManualLandingGearLedsColorTrans{RED}
+	ManualLandingGearTransTimeSeconds{5}
 EndPanel
-
 
 PanelType=PZ70MultiPanel
-PanelInstanceID=\\?\hid#vid_06a3&pid_0d06#7&175d3b7&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}
+PanelInstanceID=\\?\hid#vid_06a3&pid_0d06#6&7c8d2d0&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}
+BindingHash=4aa2b6f500e6b800937c88a87f27b042
 BeginPanel
-	MultiPanelKnob{1AP_BUTTON}\o/OSKeyPress{FiftyMilliSec,VK_A}
-	MultiPanelKnob{0AP_BUTTON}\o/OSKeyPress{FiftyMilliSec,VK_A}
-	MultiPanelKnob{1HDG_BUTTON}\o/OSKeyPress{FiftyMilliSec,LCONTROL + VK_A}
-	MultiPanelKnob{0HDG_BUTTON}\o/OSKeyPress{FiftyMilliSec,LMENU + VK_A}
-	MultiPanelDCSBIOSControl{1LCD_WHEEL_INC}\o/\o/DCSBIOSInput{HDG_SET|VARIABLE_STEP|2000}
-	MultiPanelDCSBIOSControl{1LCD_WHEEL_DEC}\o/\o/DCSBIOSInput{HDG_SET|VARIABLE_STEP|-2000}
-	MultiPanelDCSBIOSControl{0FLAPS_LEVER_DOWN|DCS-BIOS}\o/\o/DCSBIOSInput{LOW_RPM_AUDIO|SET_STATE|0}
-	MultiPanelDCSBIOSControlLCD{KNOB_ALT|UpperALT}\o/DCSBiosOutput{ALT_MSL_FT|Equals|0}
-	MultiPanelDCSBIOSControlLCD{KNOB_ALT|LowerALT}\o/DCSBiosOutput{HDG_DEG|Equals|0}
-	MultiPanelDCSBIOSControlLCD{KNOB_VS|UpperVS}\o/DCSBiosOutput{CB_CRSIND|Equals|0}
-	MultiPanelDCSBIOSControlLCD{KNOB_VS|LowerVS}\o/DCSBiosOutput{GMC_HDG|Equals|0}
+	MultiPanelKnob{ALT}\o/{1AP_BUTTON}\o/OSKeyPress{FiftyMilliSec,VK_A}
+	MultiPanelKnob{ALT}\o/{0AP_BUTTON}\o/OSKeyPress{FiftyMilliSec,VK_A}
+	MultiPanelKnob{ALT}\o/{1HDG_BUTTON}\o/OSKeyPress{FiftyMilliSec,LCONTROL + VK_A}
+	MultiPanelKnob{ALT}\o/{0HDG_BUTTON}\o/OSKeyPress{FiftyMilliSec,LMENU + VK_A}
+	MultiPanelDCSBIOSControlV2{2}\o/{ALT}\o/{LCD_WHEEL_INC|DCS-BIOS}\o/\o/DCSBIOSInput{HDG_SET|VARIABLE_STEP|2000|0}
+	MultiPanelDCSBIOSControlV2{2}\o/{ALT}\o/{LCD_WHEEL_DEC|DCS-BIOS}\o/\o/DCSBIOSInput{HDG_SET|VARIABLE_STEP|-2000|0}
+	MultiPanelDCSBIOSControlV2{0}\o/{ALT}\o/{FLAPS_LEVER_DOWN|DCS-BIOS}\o/\o/DCSBIOSInput{LOW_RPM_AUDIO|SET_STATE|0|0}
+	MultiPanelDCSBIOSControlLCD{ALT}\o/{UpperLCD}\o/DCSBiosOutput{ALT_MSL_FT|Equals|0}
+	MultiPanelDCSBIOSControlLCD{ALT}\o/{LowerLCD}\o/DCSBiosOutput{HDG_DEG|Equals|0}
+	MultiPanelDCSBIOSControlLCD{VS}\o/{UpperLCD}\o/DCSBiosOutput{CB_CRSIND|Equals|0}
+	MultiPanelDCSBIOSControlLCD{VS}\o/{LowerLCD}\o/DCSBiosOutput{GMC_HDG|Equals|0}
 EndPanel
 
-
 PanelType=BackLitPanel
-PanelInstanceID=\\?\hid#vid_06a3&pid_0b4e#9&1c05bf1&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}
+PanelInstanceID=\\?\hid#vid_06a3&pid_0b4e#8&1f079469&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}
+BindingHash=572702a29eed24bf5063baee4d6abf23
 BeginPanel
 	PanelBIP{Position_1_1|GREEN|DCSBiosOutput{BAT_SW|Equals|0}}
 	PanelBIP{Position_1_1|DARK|DCSBiosOutput{BAT_SW|Equals|1}}
@@ -82,190 +104,10 @@ BeginPanel
 	PanelBIP{Position_3_4|YELLOW|DCSBiosOutput{MASTER_ARM_SW|Equals|1}}
 EndPanel
 
-
 PanelType=TPM
 PanelInstanceID=\\?\hid#vid_06a3&pid_0b4d#7&30b328f&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}
+BindingHash=eba19a0717458d6d34a57cadcb1f6e18
 BeginPanel
 	TPMPanelSwitch{1G9}\o/OSKeyPress{FiftyMilliSec,RCONTROL + VK_C}
 	TPMPanelSwitch{0G9}\o/OSKeyPress{FiftyMilliSec,RCONTROL + VK_C}
 EndPanel
-
-
-
-
-#--------------------------------------------------------------------
-#Below are all the Virtual Keycodes in use listed. You can manually edit this file using these codes.
-#	LBUTTON
-#	RBUTTON
-#	CANCEL
-#	MBUTTON
-#	XBUTTON1
-#	XBUTTON2
-#	BACK
-#	TAB
-#	CLEAR
-#	RETURN
-#	SHIFT
-#	CONTROL
-#	MENU
-#	PAUSE
-#	CAPITAL
-#	KANA
-#	HANGEUL
-#	HANGUL
-#	JUNJA
-#	FINAL
-#	HANJA
-#	KANJI
-#	ESCAPE
-#	CONVERT
-#	NONCONVERT
-#	ACCEPT
-#	MODECHANGE
-#	SPACE
-#	PRIOR
-#	NEXT
-#	END
-#	HOME
-#	LEFT
-#	UP
-#	RIGHT
-#	DOWN
-#	SELECT
-#	PRINT
-#	EXECUTE
-#	SNAPSHOT
-#	INSERT
-#	DELETE
-#	HELP
-#	VK_0
-#	VK_1
-#	VK_2
-#	VK_3
-#	VK_4
-#	VK_5
-#	VK_6
-#	VK_7
-#	VK_8
-#	VK_9
-#	VK_A
-#	VK_B
-#	VK_C
-#	VK_D
-#	VK_E
-#	VK_F
-#	VK_G
-#	VK_H
-#	VK_I
-#	VK_J
-#	VK_K
-#	VK_L
-#	VK_M
-#	VK_N
-#	VK_O
-#	VK_P
-#	VK_Q
-#	VK_R
-#	VK_S
-#	VK_T
-#	VK_U
-#	VK_V
-#	VK_W
-#	VK_X
-#	VK_Y
-#	VK_Z
-#	LWIN
-#	RWIN
-#	APPS
-#	SLEEP
-#	NUMPAD0
-#	NUMPAD1
-#	NUMPAD2
-#	NUMPAD3
-#	NUMPAD4
-#	NUMPAD5
-#	NUMPAD6
-#	NUMPAD7
-#	NUMPAD8
-#	NUMPAD9
-#	MULTIPLY
-#	ADD
-#	SEPARATOR
-#	SUBTRACT
-#	DECIMAL
-#	DIVIDE
-#	F1
-#	F2
-#	F3
-#	F4
-#	F5
-#	F6
-#	F7
-#	F8
-#	F9
-#	F10
-#	F11
-#	F12
-#	F13
-#	F14
-#	F15
-#	F16
-#	F17
-#	F18
-#	F19
-#	F20
-#	F21
-#	F22
-#	F23
-#	F24
-#	NUMLOCK
-#	SCROLL
-#	LSHIFT
-#	RSHIFT
-#	LCONTROL
-#	RCONTROL
-#	LMENU
-#	RMENU
-#	BROWSER_BACK
-#	BROWSER_FORWARD
-#	BROWSER_REFRESH
-#	BROWSER_STOP
-#	BROWSER_SEARCH
-#	BROWSER_FAVORITES
-#	BROWSER_HOME
-#	VOLUME_MUTE
-#	VOLUME_DOWN
-#	VOLUME_UP
-#	MEDIA_NEXT_TRACK
-#	MEDIA_PREV_TRACK
-#	MEDIA_STOP
-#	MEDIA_PLAY_PAUSE
-#	LAUNCH_MAIL
-#	LAUNCH_MEDIA_SELECT
-#	LAUNCH_APP1
-#	LAUNCH_APP2
-#	OEM_1
-#	OEM_PLUS
-#	OEM_COMMA
-#	OEM_MINUS
-#	OEM_PERIOD
-#	OEM_2
-#	OEM_3
-#	OEM_4
-#	OEM_5
-#	OEM_6
-#	OEM_7
-#	OEM_8
-#	OEM_102
-#	PROCESSKEY
-#	PACKET
-#	ATTN
-#	CRSEL
-#	EXSEL
-#	EREOF
-#	PLAY
-#	ZOOM
-#	NONAME
-#	PA1
-#	OEM_CLEAR
-
