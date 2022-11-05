@@ -1,11 +1,28 @@
 #This file can be manually edited using any ASCII editor.
-#File created on 9/10/2015 12:00:00 AM 9/10/2015 8:36:36 PM
-#  ***Do not change the location nor content of the line below***
-Airframe=A10C
+#File created on 05/11/2022 0.00.00 05/11/2022 13.14.23#
+#
+#IMPORTANT INFO REGARDING the keyboard key AltGr (RAlt as named in DCS) or RMENU as named DCSFP
+#When you press AltGr DCSFP will register RMENU + LCONTROL. This is a bug which "just is". You need to modify that in the profile
+#by deleting the + LCONTROL part.
+#So for example AltGr + HOME pressed on the keyboard becomes RMENU + LCONTROL + HOME
+#Open text editor and delete the LCONTROL ==> RMENU + HOME
+#Supported panels :
+#   PZ55SwitchPanel
+#   PZ69RadioPanel
+#   PZ70MultiPanel
+#   BackLitPanel
+#   StreamDeckMini
+#   StreamDeck
+#   StreamDeckXL
 
+#  ***Do not change the location nor content of the line below***
+Profile=5
+EmulationModesFlag=3
+UseGenericRadio=True
 
 PanelType=PZ55SwitchPanel
-PanelInstanceID=\\?\hid#vid_06a3&pid_0d67#7&2e3b65ed&1&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}
+PanelInstanceID=\\?\hid#vid_06a3&pid_0d67#6&3d3d2c7&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}
+BindingHash=8c0d23eebcd3929c5e732cdd3b327081
 BeginPanel
 	SwitchPanelKey{1KNOB_ENGINE_RIGHT}\o/OSKeyPress{FiftyMilliSec,LSHIFT + VK_Q}
 	SwitchPanelKey{1KNOB_ENGINE_LEFT}\o/OSKeyPress{FiftyMilliSec,LCONTROL + VK_Q}
@@ -41,35 +58,40 @@ BeginPanel
 	SwitchPanelLedRight{GREEN|DCSBiosOutput{GEAR_R_SAFE|Equals|1}}
 	SwitchPanelLedRight{DARK|DCSBiosOutput{GEAR_R_SAFE|Equals|0}}
 	SwitchPanelLedRight{RED|DCSBiosOutput{HANDLE_GEAR_WARNING|Equals|1}}
+	ManualLandingGearLEDs{False}
+	ManualLandingGearLedsColorUp{DARK}
+	ManualLandingGearLedsColorDown{GREEN}
+	ManualLandingGearLedsColorTrans{RED}
+	ManualLandingGearTransTimeSeconds{5}
 EndPanel
-
 
 PanelType=PZ70MultiPanel
-PanelInstanceID=\\?\hid#vid_06a3&pid_0d06#7&175d3b7&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}
+PanelInstanceID=\\?\hid#vid_06a3&pid_0d06#6&7c8d2d0&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}
+BindingHash=a3244b27f1d52990bd9824af09d8f90d
 BeginPanel
-	MultiPanelDCSBIOSControl{1HDG_BUTTON|Signal Lights Test}\o/\o/DCSBIOSInput{LAMP_TEST_BTN|SET_STATE|1}
-	MultiPanelDCSBIOSControl{0HDG_BUTTON|Signal Lights Test}\o/\o/DCSBIOSInput{LAMP_TEST_BTN|SET_STATE|0}
-	MultiPanelDCSBIOSControl{1NAV_BUTTON|Fire System Test}\o/\o/DCSBIOSInput{ALCP_FDBA_TEST|SET_STATE|1}
-	MultiPanelDCSBIOSControl{0NAV_BUTTON|Fire System Test}\o/\o/DCSBIOSInput{ALCP_FDBA_TEST|SET_STATE|0}
-	MultiPanelDCSBIOSControl{1IAS_BUTTON|Fuel Gauge Test}\o/\o/DCSBIOSInput{FQIS_TEST|SET_STATE|1}
-	MultiPanelDCSBIOSControl{0IAS_BUTTON|Fuel Gauge Test}\o/\o/DCSBIOSInput{FQIS_TEST|SET_STATE|0}
-	MultiPanelDCSBIOSControl{1ALT_BUTTON|Oxygen System Test}\o/\o/DCSBIOSInput{ENVCP_OXY_TEST|SET_STATE|1}
-	MultiPanelDCSBIOSControl{0ALT_BUTTON|Oxygen System Test}\o/\o/DCSBIOSInput{ENVCP_OXY_TEST|SET_STATE|0}
-	MultiPanelDCSBIOSControl{1VS_BUTTON|Take Off Trim}\o/\o/DCSBIOSInput{SASP_TO_TRIM|SET_STATE|1}
-	MultiPanelDCSBIOSControl{0VS_BUTTON|Take Off Trim}\o/\o/DCSBIOSInput{SASP_TO_TRIM|SET_STATE|0}
-	MultiPanelDCSBIOSControl{1LCD_WHEEL_DEC|Set Heading}\o/\o/DCSBIOSInput{HSI_HDG_KNOB|VARIABLE_STEP|-1500}
-	MultiPanelDCSBIOSControl{1LCD_WHEEL_INC|Set Heading}\o/\o/DCSBIOSInput{HSI_HDG_KNOB|VARIABLE_STEP|1500}
-	MultiPanelDCSBIOSControl{1PITCH_TRIM_WHEEL_UP|Set Course}\o/\o/DCSBIOSInput{HSI_CRS_KNOB|VARIABLE_STEP|1500}
-	MultiPanelDCSBIOSControl{1PITCH_TRIM_WHEEL_DOWN|Set Course}\o/\o/DCSBIOSInput{HSI_CRS_KNOB|VARIABLE_STEP|-1500}
-	MultiPanelDCSBIOSControlLCD{KNOB_ALT|UpperALT}\o/DCSBiosOutput{ALT_MSL_FT|Equals|0}
-	MultiPanelDCSBIOSControlLCD{KNOB_ALT|LowerALT}\o/DCSBiosOutput{HDG_DEG|Equals|0}
-	MultiPanelDCSBIOSControlLCD{KNOB_VS|UpperVS}\o/DCSBiosOutput{AIRSPEED_DIAL|Equals|0}
-	MultiPanelDCSBIOSControlLCD{KNOB_VS|LowerVS}\o/DCSBiosOutput{AIRSPEED_NEEDLE|Equals|0}
+	MultiPanelDCSBIOSControlV2{2}\o/{ALT}\o/{HDG_BUTTON|Signal Lights Test}\o/\o/DCSBIOSInput{LAMP_TEST_BTN|SET_STATE|1|0}
+	MultiPanelDCSBIOSControlV2{0}\o/{ALT}\o/{HDG_BUTTON|Signal Lights Test}\o/\o/DCSBIOSInput{LAMP_TEST_BTN|SET_STATE|0|0}
+	MultiPanelDCSBIOSControlV2{2}\o/{ALT}\o/{NAV_BUTTON|Fire System Test}\o/\o/DCSBIOSInput{ALCP_FDBA_TEST|SET_STATE|1|0}
+	MultiPanelDCSBIOSControlV2{0}\o/{ALT}\o/{NAV_BUTTON|Fire System Test}\o/\o/DCSBIOSInput{ALCP_FDBA_TEST|SET_STATE|0|0}
+	MultiPanelDCSBIOSControlV2{2}\o/{ALT}\o/{IAS_BUTTON|Fuel Gauge Test}\o/\o/DCSBIOSInput{FQIS_TEST|SET_STATE|1|0}
+	MultiPanelDCSBIOSControlV2{0}\o/{ALT}\o/{IAS_BUTTON|Fuel Gauge Test}\o/\o/DCSBIOSInput{FQIS_TEST|SET_STATE|0|0}
+	MultiPanelDCSBIOSControlV2{2}\o/{ALT}\o/{ALT_BUTTON|Oxygen System Test}\o/\o/DCSBIOSInput{ENVCP_OXY_TEST|SET_STATE|1|0}
+	MultiPanelDCSBIOSControlV2{0}\o/{ALT}\o/{ALT_BUTTON|Oxygen System Test}\o/\o/DCSBIOSInput{ENVCP_OXY_TEST|SET_STATE|0|0}
+	MultiPanelDCSBIOSControlV2{2}\o/{ALT}\o/{VS_BUTTON|Take Off Trim}\o/\o/DCSBIOSInput{SASP_TO_TRIM|SET_STATE|1|0}
+	MultiPanelDCSBIOSControlV2{0}\o/{ALT}\o/{VS_BUTTON|Take Off Trim}\o/\o/DCSBIOSInput{SASP_TO_TRIM|SET_STATE|0|0}
+	MultiPanelDCSBIOSControlV2{2}\o/{ALT}\o/{LCD_WHEEL_DEC|Set Heading}\o/\o/DCSBIOSInput{HSI_HDG_KNOB|VARIABLE_STEP|-1500|0}
+	MultiPanelDCSBIOSControlV2{2}\o/{ALT}\o/{LCD_WHEEL_INC|Set Heading}\o/\o/DCSBIOSInput{HSI_HDG_KNOB|VARIABLE_STEP|1500|0}
+	MultiPanelDCSBIOSControlV2{2}\o/{ALT}\o/{PITCH_TRIM_WHEEL_UP|Set Course}\o/\o/DCSBIOSInput{HSI_CRS_KNOB|VARIABLE_STEP|1500|0}
+	MultiPanelDCSBIOSControlV2{2}\o/{ALT}\o/{PITCH_TRIM_WHEEL_DOWN|Set Course}\o/\o/DCSBIOSInput{HSI_CRS_KNOB|VARIABLE_STEP|-1500|0}
+	MultiPanelDCSBIOSControlLCD{ALT}\o/{UpperLCD}\o/DCSBiosOutput{ALT_MSL_FT|Equals|0}
+	MultiPanelDCSBIOSControlLCD{ALT}\o/{LowerLCD}\o/DCSBiosOutput{HDG_DEG|Equals|0}
+	MultiPanelDCSBIOSControlLCD{VS}\o/{UpperLCD}\o/DCSBiosOutput{AIRSPEED_DIAL|Equals|0}
+	MultiPanelDCSBIOSControlLCD{VS}\o/{LowerLCD}\o/DCSBiosOutput{AIRSPEED_NEEDLE|Equals|0}
 EndPanel
 
-
 PanelType=BackLitPanel
-PanelInstanceID=\\?\hid#vid_06a3&pid_0b4e#9&1c05bf1&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}
+PanelInstanceID=\\?\hid#vid_06a3&pid_0b4e#8&1f079469&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}
+BindingHash=ad67bb65872690659293b64aeea9b9ae
 BeginPanel
 	PanelBIP{Position_1_1|GREEN|DCSBiosOutput{EPP_BATTERY_PWR|Equals|1}}
 	PanelBIP{Position_1_1|DARK|DCSBiosOutput{EPP_BATTERY_PWR|Equals|0}}
@@ -119,9 +141,9 @@ BeginPanel
 	PanelBIP{Position_1_2|DARK|DCSBiosOutput{ANTI_SKID_SWITCH|Equals|0}}
 EndPanel
 
-
 PanelType=TPM
 PanelInstanceID=\\?\hid#vid_06a3&pid_0b4d#7&30b328f&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}
+BindingHash=a13c82c5dd171a45f52cbdcc489f2510
 BeginPanel
 	TPMPanelSwitch{0G7}\o/OSKeyPress{INFORMATION=^SAS On^[HalfSecond,VK_O,FiftyMilliSec][HalfSecond,LSHIFT + VK_O,FiftyMilliSec][HalfSecond,VK_N,FiftyMilliSec][HalfSecond,LSHIFT + VK_N,FiftyMilliSec]}
 	TPMPanelSwitch{1G7}\o/OSKeyPress{INFORMATION=^SAS Off^[HalfSecond,VK_O,FiftyMilliSec][HalfSecond,LSHIFT + VK_O,FiftyMilliSec][HalfSecond,VK_N,FiftyMilliSec][HalfSecond,LSHIFT + VK_N,FiftyMilliSec]}
@@ -142,6 +164,51 @@ BeginPanel
 	TPMPanelDCSBIOSControl{0G9|Canopy Open}\o/\o/DCSBIOSInput{CANOPY_OPEN|SET_STATE|2}
 	TPMPanelDCSBIOSControl{1G9|Canopy Close}\o/\o/DCSBIOSInput{CANOPY_OPEN|SET_STATE|0}
 EndPanel
+
+PanelType=PZ69RadioPanel
+PanelInstanceID=\\?\hid#vid_06a3&pid_0d05#9&37fc7ab1&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}
+BindingHash=3504b39dc0c4b988437196adb1e6ef9a
+BeginPanel
+EndPanel
+
+PanelType=StreamDeckMini
+PanelInstanceID=\\?\hid#vid_0fd9&pid_0063#9&b25e537&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}
+BindingHash=65a2ec1dcb1fd0abc321d47d1a025792
+BeginPanelJSON
+{
+  "$type": "System.Collections.Generic.List`1[[NonVisuals.StreamDeck.StreamDeckLayer, NonVisuals]], System.Private.CoreLib",
+  "$values": [
+    {
+      "$type": "NonVisuals.StreamDeck.StreamDeckLayer, NonVisuals",
+      "Name": "Home",
+      "StreamDeckButtons": {
+        "$type": "System.Collections.Generic.List`1[[NonVisuals.StreamDeck.StreamDeckButton, NonVisuals]], System.Private.CoreLib",
+        "$values": []
+      }
+    }
+  ]
+}
+EndPanelJSON
+
+PanelType=StreamDeck
+PanelInstanceID=\\?\hid#vid_0fd9&pid_0060#8&25d3ea36&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}
+BindingHash=21b8e876e587aeb8907c0388ffad5b76
+BeginPanelJSON
+{
+  "$type": "System.Collections.Generic.List`1[[NonVisuals.StreamDeck.StreamDeckLayer, NonVisuals]], System.Private.CoreLib",
+  "$values": [
+    {
+      "$type": "NonVisuals.StreamDeck.StreamDeckLayer, NonVisuals",
+      "Name": "Home",
+      "StreamDeckButtons": {
+        "$type": "System.Collections.Generic.List`1[[NonVisuals.StreamDeck.StreamDeckButton, NonVisuals]], System.Private.CoreLib",
+        "$values": []
+      }
+    }
+  ]
+}
+EndPanelJSON
+
 
 
 
@@ -321,4 +388,5 @@ EndPanel
 #	NONAME
 #	PA1
 #	OEM_CLEAR
+#	VK_NULL
 
