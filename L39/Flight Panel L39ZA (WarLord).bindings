@@ -15,12 +15,12 @@ PanelType=PZ55SwitchPanel
 PanelInstanceID=\\?\hid#vid_06a3&pid_0d67#8&2612a448&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}
 PanelSettingsVersion=0X
 BeginPanel
-	SwitchPanelDCSBIOSControl{1LEVER_GEAR_DOWN|DCS-BIOS}\o/\o/DCSBIOSInput{CB_Gears|SET_STATE|1|0}
-	SwitchPanelDCSBIOSControl{1LEVER_GEAR_UP|DCS-BIOS}\o/\o/DCSBIOSInput{CB_Gears|SET_STATE|0|0}
-	SwitchPanelDCSBIOSControl{0SWITCHKEY_MASTER_BAT|Batt off}\o/\o/DCSBIOSInput{BatterySw|SET_STATE|0|0}
-	SwitchPanelDCSBIOSControl{0SWITCHKEY_FUEL_PUMP|Boster Pump off}\o/\o/DCSBIOSInput{CB_BoosterPump|SET_STATE|0|0}
-	SwitchPanelDCSBIOSControl{1SWITCHKEY_PITOT_HEAT|Pitot 2 on}\o/\o/DCSBIOSInput{LeftPitotHeatingOn|SET_STATE|1|0}\o/DCSBIOSInput{RightPitotHeatingOn|SET_STATE|1|0}
-	SwitchPanelDCSBIOSControl{0SWITCHKEY_PITOT_HEAT|Pitot 2 off}\o/\o/DCSBIOSInput{LeftPitotHeatingOff|SET_STATE|0|0}\o/DCSBIOSInput{RightPitotHeatingOff|SET_STATE|0|0}
+	SwitchPanelDCSBIOSControl{1LEVER_GEAR_DOWN|DCS-BIOS}\o/\o/DCSBIOSInput{CB_GEARS|SET_STATE|1|0}
+	SwitchPanelDCSBIOSControl{1LEVER_GEAR_UP|DCS-BIOS}\o/\o/DCSBIOSInput{CB_GEARS|SET_STATE|0|0}
+	SwitchPanelDCSBIOSControl{0SWITCHKEY_MASTER_BAT|Batt off}\o/\o/DCSBIOSInput{FRONT_BATTERY_SW|SET_STATE|0|0}
+	SwitchPanelDCSBIOSControl{0SWITCHKEY_FUEL_PUMP|Boster Pump off}\o/\o/DCSBIOSInput{CB_BOOST_PUMP|SET_STATE|0|0}
+	SwitchPanelDCSBIOSControl{1SWITCHKEY_PITOT_HEAT|Pitot 2 on}\o/\o/DCSBIOSInput{PITOT_HEAT_ON_L|SET_STATE|1|0}\o/DCSBIOSInput{PITOT_HEAT_ON_R|SET_STATE|1|0}
+	SwitchPanelDCSBIOSControl{0SWITCHKEY_PITOT_HEAT|Pitot 2 off}\o/\o/DCSBIOSInput{PITOT_HEAT_OFF_L|SET_STATE|0|0}\o/DCSBIOSInput{PITOT_HEAT_OFF_R|SET_STATE|0|0}
 	ManualLandingGearLEDs{True}
 EndPanel
 
