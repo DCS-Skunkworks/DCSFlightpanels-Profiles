@@ -1,0 +1,289 @@
+#This file can be manually edited using any ASCII editor.
+#File created on 21/03/2020 00:00:00 21/03/2020 19:01:45#
+#
+#IMPORTANT INFO REGARDING the keyboard key AltGr (RAlt as named in DCS) or RMENU as named DCSFP
+#When you press AltGr DCSFP will register RMENU + LCONTROL. This is a bug which "just is". You need to modify that in the profile
+#by deleting the + LCONTROL part.
+#So for example AltGr + HOME pressed on the keyboard becomes RMENU + LCONTROL + HOME
+#Open text editor and delete the LCONTROL ==> RMENU + HOME
+
+#  ***Do not change the location nor content of the line below***
+Airframe=F16C
+OperationLevelFlag=3
+UseGenericRadio=False
+
+
+PanelType=PZ55SwitchPanel
+PanelInstanceID=\\?\hid#vid_06a3&pid_0d67#7&1a391435&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}
+PanelSettingsVersion=0X
+BeginPanel
+	SwitchPanelKey{0SWITCHKEY_CLOSE_COWL}\o/OSKeyPress{INFORMATION=^Canopy Close^[FiftyMilliSec,VK_I,FiftyMilliSec][FiftyMilliSec,LSHIFT + VK_I,Second]}
+	SwitchPanelKey{1SWITCHKEY_CLOSE_COWL}\o/OSKeyPress{INFORMATION=^Canopy open^[FiftyMilliSec,LSHIFT + VK_P,FiftyMilliSec][FiftyMilliSec,LSHIFT + VK_P,TenSecs][FiftyMilliSec,VK_P,FiftyMilliSec]}
+	SwitchPanelDCSBIOSControl{1SWITCHKEY_MASTER_BAT|Battery On}\o/\o/DCSBIOSInput{MAIN_PWR_SW|SET_STATE|2|0}
+	SwitchPanelDCSBIOSControl{0SWITCHKEY_MASTER_BAT|Battery Off}\o/\o/DCSBIOSInput{MAIN_PWR_SW|SET_STATE|0|0}
+	SwitchPanelDCSBIOSControl{1SWITCHKEY_MASTER_ALT|Max Power On}\o/\o/DCSBIOSInput{MAX_PWR_SW|SET_STATE|1|0}
+	SwitchPanelDCSBIOSControl{0SWITCHKEY_MASTER_ALT|Max Power Off}\o/\o/DCSBIOSInput{MAX_PWR_SW|SET_STATE|0|0}
+	SwitchPanelDCSBIOSControl{1SWITCHKEY_LIGHTS_PANEL|Cockpit Lights}\o/\o/DCSBIOSInput{PRI_INST_PNL_BRT_KNB|SET_STATE|65535|0}\o/DCSBIOSInput{PRI_CONSOLES_BRT_KNB|SET_STATE|65535|0}\o/DCSBIOSInput{PRI_DATA_DISPLAY_BRT_KNB|SET_STATE|65535|0}
+	SwitchPanelDCSBIOSControl{0SWITCHKEY_LIGHTS_PANEL|Cockpit Lights}\o/\o/DCSBIOSInput{PRI_INST_PNL_BRT_KNB|SET_STATE|0|0}\o/DCSBIOSInput{PRI_CONSOLES_BRT_KNB|SET_STATE|0|0}\o/DCSBIOSInput{FLOOD_CONSOLES_BRT_KNB|SET_STATE|0|0}\o/DCSBIOSInput{FLOOD_INST_PNL_BRT_KNB|SET_STATE|0|0}\o/DCSBIOSInput{PRI_DATA_DISPLAY_BRT_KNB|SET_STATE|0|0}
+	SwitchPanelDCSBIOSControl{1SWITCHKEY_LIGHTS_STROBE|Flash On}\o/\o/DCSBIOSInput{POS_FLASH_LIGHT_SW|SET_STATE|1|0}
+	SwitchPanelDCSBIOSControl{0SWITCHKEY_LIGHTS_STROBE|Flash Off}\o/\o/DCSBIOSInput{POS_FLASH_LIGHT_SW|SET_STATE|0|0}
+	SwitchPanelDCSBIOSControl{1SWITCHKEY_LIGHTS_TAXI|Taxi Light On}\o/\o/DCSBIOSInput{LAND_TAXI_LIGHT_SW|SET_STATE|2|0}
+	SwitchPanelDCSBIOSControl{0SWITCHKEY_LIGHTS_TAXI|Taxi Light Off}\o/\o/DCSBIOSInput{LAND_TAXI_LIGHT_SW|SET_STATE|0|0}
+	SwitchPanelDCSBIOSControl{1SWITCHKEY_LIGHTS_LANDING|Landing Light On}\o/\o/DCSBIOSInput{LAND_TAXI_LIGHT_SW|SET_STATE|2|0}
+	SwitchPanelDCSBIOSControl{0SWITCHKEY_LIGHTS_LANDING|Landing Light Off}\o/\o/DCSBIOSInput{LAND_TAXI_LIGHT_SW|SET_STATE|0|0}
+	SwitchPanelDCSBIOSControl{1SWITCHKEY_LIGHTS_NAV|Nav Light Norm On}\o/\o/DCSBIOSInput{MASTER_LIGHT_SW|SET_STATE|4|0}
+	SwitchPanelDCSBIOSControl{0SWITCHKEY_LIGHTS_NAV|Nav Light Norm Off}\o/\o/DCSBIOSInput{MASTER_LIGHT_SW|SET_STATE|0|0}
+	SwitchPanelDCSBIOSControl{1SWITCHKEY_LIGHTS_BEACON|Anti Col On}\o/\o/DCSBIOSInput{ANTI_COLL_LIGHT_KNB|SET_STATE|5|0}
+	SwitchPanelDCSBIOSControl{0SWITCHKEY_LIGHTS_BEACON|Anti Col Off}\o/\o/DCSBIOSInput{ANTI_COLL_LIGHT_KNB|SET_STATE|0|0}
+	SwitchPanelDCSBIOSControl{1SWITCHKEY_DE_ICE|De Ice On}\o/\o/DCSBIOSInput{ENG_ANTI_ICE|SET_STATE|2|0}
+	SwitchPanelDCSBIOSControl{0SWITCHKEY_DE_ICE|De Ice Off}\o/\o/DCSBIOSInput{ENG_ANTI_ICE|SET_STATE|0|0}
+	SwitchPanelDCSBIOSControl{1LEVER_GEAR_DOWN|L Gear Down}\o/\o/DCSBIOSInput{GEAR_HANDLE|SET_STATE|0|0}
+	SwitchPanelDCSBIOSControl{1LEVER_GEAR_UP|L Gear Up}\o/\o/DCSBIOSInput{GEAR_HANDLE|SET_STATE|1|0}
+	SwitchPanelDCSBIOSControl{1SWITCHKEY_FUEL_PUMP|Air Refuel + Light}\o/\o/DCSBIOSInput{AIR_REFUEL_SW|SET_STATE|1|0}\o/DCSBIOSInput{AIR_REFUEL_LIGHT_KNB|SET_STATE|65535|0}
+	SwitchPanelDCSBIOSControl{0SWITCHKEY_FUEL_PUMP|Air Refuel + Light}\o/\o/DCSBIOSInput{AIR_REFUEL_LIGHT_KNB|SET_STATE|0|0}\o/DCSBIOSInput{AIR_REFUEL_SW|SET_STATE|0|0}
+	SwitchPanelDCSBIOSControl{1SWITCHKEY_AVIONICS_MASTER|Avionics Power On}\o/\o/DCSBIOSInput{MMC_PWR_SW|SET_STATE|1|0}\o/DCSBIOSInput{ST_STA_SW|SET_STATE|1|0}\o/DCSBIOSInput{MFD_SW|SET_STATE|1|0}\o/DCSBIOSInput{UFC_SW|SET_STATE|1|0}\o/DCSBIOSInput{MAP_SW|SET_STATE|1|0}\o/DCSBIOSInput{GPS_SW|SET_STATE|1|0}\o/DCSBIOSInput{DL_SW|SET_STATE|1|0}
+	SwitchPanelDCSBIOSControl{0SWITCHKEY_AVIONICS_MASTER|Avionics Power Off}\o/\o/DCSBIOSInput{MMC_PWR_SW|SET_STATE|0|0}\o/DCSBIOSInput{ST_STA_SW|SET_STATE|0|0}\o/DCSBIOSInput{MFD_SW|SET_STATE|0|0}\o/DCSBIOSInput{UFC_SW|SET_STATE|0|0}\o/DCSBIOSInput{MAP_SW|SET_STATE|0|0}\o/DCSBIOSInput{GPS_SW|SET_STATE|0|0}\o/DCSBIOSInput{DL_SW|SET_STATE|0|0}
+	SwitchPanelDCSBIOSControl{1SWITCHKEY_PITOT_HEAT|Probe Heat On}\o/\o/DCSBIOSInput{PROBE_HEAT_SW|SET_STATE|2|0}
+	SwitchPanelDCSBIOSControl{0SWITCHKEY_PITOT_HEAT|Prob Heat Off}\o/\o/DCSBIOSInput{PROBE_HEAT_SW|SET_STATE|1|0}
+	ManualLandingGearLEDs{True}
+EndPanel
+
+
+PanelType=PZ69RadioPanel
+PanelInstanceID=\\?\hid#vid_06a3&pid_0d05#7&63717c2&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}
+PanelSettingsVersion=0X
+BeginPanel
+	RadioPanelDCSBIOSControl{UpperCOM1}\o/{1UpperLargeFreqWheelInc|ICP DED SW}\o/\o/DCSBIOSInput{ICP_DED_SW|SET_STATE|2|0}
+	RadioPanelDCSBIOSControl{UpperCOM1}\o/{1UpperLargeFreqWheelDec|ICP DED SW}\o/\o/DCSBIOSInput{ICP_DED_SW|SET_STATE|0|0}
+	RadioPanelDCSBIOSControl{UpperCOM1}\o/{1UpperSmallFreqWheelInc|ICP COMM1 UHF}\o/\o/DCSBIOSInput{ICP_COM1_BTN|SET_STATE|1|0}
+	RadioPanelDCSBIOSControl{LowerCOM2}\o/{1LowerLargeFreqWheelInc|ICP DED SW}\o/\o/DCSBIOSInput{ICP_DED_SW|SET_STATE|2|0}
+	RadioPanelDCSBIOSControl{LowerCOM2}\o/{1LowerLargeFreqWheelDec|ICP DED SW}\o/\o/DCSBIOSInput{ICP_DED_SW|SET_STATE|0|0}
+	RadioPanelDCSBIOSControl{UpperCOM1}\o/{1UpperSmallFreqWheelDec|ICP COMM1 UHF}\o/\o/DCSBIOSInput{ICP_COM1_BTN|SET_STATE|0|0}
+	RadioPanelDCSBIOSControl{LowerCOM1}\o/{1LowerLargeFreqWheelInc|DCS-BIOS}\o/\o/DCSBIOSInput{ICP_DED_SW|SET_STATE|2|0}
+	RadioPanelDCSBIOSControl{LowerCOM1}\o/{1LowerLargeFreqWheelDec|DCS-BIOS}\o/\o/DCSBIOSInput{ICP_DED_SW|SET_STATE|0|0}
+	RadioPanelDCSBIOSControl{LowerCOM1}\o/{1LowerSmallFreqWheelInc|DCS-BIOS}\o/\o/DCSBIOSInput{ICP_COM1_BTN|SET_STATE|1|0}
+	RadioPanelDCSBIOSControl{LowerCOM1}\o/{1LowerSmallFreqWheelDec|DCS-BIOS}\o/\o/DCSBIOSInput{ICP_COM1_BTN|FIXED_STEP|DEC|0}
+	RadioPanelDCSBIOSControl{UpperCOM2}\o/{1UpperLargeFreqWheelInc|DCS-BIOS}\o/\o/DCSBIOSInput{ICP_DED_SW|SET_STATE|2|0}
+	RadioPanelDCSBIOSControl{UpperCOM2}\o/{1UpperLargeFreqWheelDec|DCS-BIOS}\o/\o/DCSBIOSInput{ICP_DED_SW|SET_STATE|0|0}
+	RadioPanelDCSBIOSControl{UpperCOM2}\o/{1UpperSmallFreqWheelInc|DCS-BIOS}\o/\o/DCSBIOSInput{ICP_COM2_BTN|SET_STATE|1|0}
+	RadioPanelDCSBIOSControl{UpperCOM2}\o/{1UpperSmallFreqWheelDec|DCS-BIOS}\o/\o/DCSBIOSInput{ICP_COM2_BTN|SET_STATE|0|0}
+	RadioPanelDCSBIOSControl{LowerCOM2}\o/{1LowerSmallFreqWheelInc|ICP COMM2 VHF}\o/\o/DCSBIOSInput{ICP_COM2_BTN|SET_STATE|1|0}
+	RadioPanelDCSBIOSControl{LowerCOM2}\o/{1LowerSmallFreqWheelDec|ICP COMM2 VHF}\o/\o/DCSBIOSInput{ICP_COM2_BTN|SET_STATE|0|0}
+EndPanel
+
+
+PanelType=PZ70MultiPanel
+PanelInstanceID=\\?\hid#vid_06a3&pid_0d06#7&17d717a&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}
+PanelSettingsVersion=2X
+BeginPanel
+	MultiPanelDCSBIOSControl{ALT}\o/{1FLAPS_LEVER_UP|Flaps Up}\o/\o/DCSBIOSInput{ALT_FLAPS_SW|SET_STATE|0|0}
+	MultiPanelDCSBIOSControl{ALT}\o/{1FLAPS_LEVER_DOWN|Flaps Down}\o/\o/DCSBIOSInput{ALT_FLAPS_SW|SET_STATE|1|0}
+	MultiPanelDCSBIOSControl{ALT}\o/{1PITCH_TRIM_WHEEL_UP|Trim Up}\o/\o/DCSBIOSInput{PITCH_TRIM|VARIABLE_STEP|-3000|0}
+	MultiPanelDCSBIOSControl{ALT}\o/{1PITCH_TRIM_WHEEL_DOWN|Trim Down}\o/\o/DCSBIOSInput{PITCH_TRIM|VARIABLE_STEP|3000|0}
+	MultiPanelDCSBIOSControl{CRS}\o/{1LCD_WHEEL_DEC|DCS-BIOS}\o/\o/DCSBIOSInput{EHSI_CRS_SET_KNB|VARIABLE_STEP|65535|0}
+	MultiPanelDCSBIOSControl{CRS}\o/{1LCD_WHEEL_INC|DCS-BIOS}\o/\o/DCSBIOSInput{EHSI_CRS_SET_KNB|VARIABLE_STEP|0|0}
+	MultiPanelDCSBIOSControl{ALT}\o/{1LCD_WHEEL_DEC|Alt Baro Set Inc}\o/\o/DCSBIOSInput{ALT_BARO_SET_KNB|VARIABLE_STEP|-1000|0}
+	MultiPanelDCSBIOSControl{ALT}\o/{1LCD_WHEEL_INC|Alt Baro Set Dec}\o/\o/DCSBIOSInput{ALT_BARO_SET_KNB|VARIABLE_STEP|1000|0}
+	MultiPanelDCSBIOSControl{VS}\o/{1FLAPS_LEVER_UP|Flaps Up}\o/\o/DCSBIOSInput{ALT_FLAPS_SW|SET_STATE|0|0}
+	MultiPanelDCSBIOSControl{VS}\o/{1FLAPS_LEVER_DOWN|Flaps Down}\o/\o/DCSBIOSInput{ALT_FLAPS_SW|SET_STATE|1|0}
+	MultiPanelDCSBIOSControl{IAS}\o/{1FLAPS_LEVER_UP|Flaps Up}\o/\o/DCSBIOSInput{ALT_FLAPS_SW|SET_STATE|0|0}
+	MultiPanelDCSBIOSControl{IAS}\o/{1FLAPS_LEVER_DOWN|Flaps Down}\o/\o/DCSBIOSInput{ALT_FLAPS_SW|SET_STATE|1|0}
+	MultiPanelDCSBIOSControl{HDG}\o/{1FLAPS_LEVER_UP|Flaps Up}\o/\o/DCSBIOSInput{ALT_FLAPS_SW|SET_STATE|0|0}
+	MultiPanelDCSBIOSControl{HDG}\o/{1FLAPS_LEVER_DOWN|Flaps Down}\o/\o/DCSBIOSInput{ALT_FLAPS_SW|SET_STATE|1|0}
+	MultiPanelDCSBIOSControl{CRS}\o/{1FLAPS_LEVER_UP|Flaps Up}\o/\o/DCSBIOSInput{ALT_FLAPS_SW|SET_STATE|0|0}
+	MultiPanelDCSBIOSControl{CRS}\o/{1FLAPS_LEVER_DOWN|Flaps Down}\o/\o/DCSBIOSInput{ALT_FLAPS_SW|SET_STATE|1|0}
+	MultiPanelDCSBIOSControl{ALT}\o/{1AP_BUTTON|AP On}\o/\o/DCSBIOSInput{AP_PITCH_SW|SET_STATE|0|0}
+	MultiPanelDCSBIOSControl{ALT}\o/{0AP_BUTTON|AP Off}\o/\o/DCSBIOSInput{AP_PITCH_SW|SET_STATE|2|0}
+	MultiPanelDCSBIOSControl{ALT}\o/{1HDG_BUTTON|Auto HDG to WP}\o/\o/DCSBIOSInput{AP_ROLL_SW|SET_STATE|0|0}
+	MultiPanelDCSBIOSControl{ALT}\o/{0HDG_BUTTON|Auto HDG to WP}\o/\o/DCSBIOSInput{AP_ROLL_SW|SET_STATE|0|0}
+	MultiPanelDCSBIOSControl{IAS}\o/{1LCD_WHEEL_DEC|DCS-BIOS}\o/\o/DCSBIOSInput{AIRSPEED_SET_KNB|VARIABLE_STEP|-65535|0}
+	MultiPanelDCSBIOSControl{IAS}\o/{1LCD_WHEEL_INC|DCS-BIOS}\o/\o/DCSBIOSInput{AIRSPEED_SET_KNB|VARIABLE_STEP|65535|0}
+	MultiPanelDCSBIOSControlLCD{ALT}\o/{UpperLCD}\o/DCSBiosOutput{ALT_MSL_FT|Equals|0}
+	MultiPanelDCSBIOSControlLCD{ALT}\o/{LowerLCD}\o/DCSBiosOutput{IAS_US_INT|Equals|0}
+	MultiPanelDCSBIOSControlLCD{IAS}\o/{UpperLCD}\o/DCSBiosOutput{AIRSPEED_SET_KNB|Equals|0}
+	MultiPanelDCSBIOSControlLCD{HDG}\o/{UpperLCD}\o/DCSBiosOutput{HDG_DEG|Equals|0}
+	MultiPanelDCSBIOSControlLCD{CRS}\o/{UpperLCD}\o/DCSBiosOutput{EHSI_CRS_SET|Equals|0}
+	MultiPanelDCSBIOSControlLCD{VS}\o/{UpperLCD}\o/DCSBiosOutput{COCKPIT_ALITITUDE|Equals|0}
+	MultiPanelDCSBIOSControlLCD{VS}\o/{LowerLCD}\o/DCSBiosOutput{IAS_EU_INT|Equals|0}
+EndPanel
+
+
+
+
+#--------------------------------------------------------------------
+#Below are all the Virtual Keycodes in use listed. You can manually edit this file using these codes.
+#	LBUTTON
+#	RBUTTON
+#	CANCEL
+#	MBUTTON
+#	XBUTTON1
+#	XBUTTON2
+#	BACK
+#	TAB
+#	CLEAR
+#	RETURN
+#	SHIFT
+#	CONTROL
+#	MENU
+#	PAUSE
+#	CAPITAL
+#	KANA
+#	HANGEUL
+#	HANGUL
+#	JUNJA
+#	FINAL
+#	HANJA
+#	KANJI
+#	ESCAPE
+#	CONVERT
+#	NONCONVERT
+#	ACCEPT
+#	MODECHANGE
+#	SPACE
+#	PRIOR
+#	NEXT
+#	END
+#	HOME
+#	LEFT
+#	UP
+#	RIGHT
+#	DOWN
+#	SELECT
+#	PRINT
+#	EXECUTE
+#	SNAPSHOT
+#	INSERT
+#	DELETE
+#	HELP
+#	VK_0
+#	VK_1
+#	VK_2
+#	VK_3
+#	VK_4
+#	VK_5
+#	VK_6
+#	VK_7
+#	VK_8
+#	VK_9
+#	VK_A
+#	VK_B
+#	VK_C
+#	VK_D
+#	VK_E
+#	VK_F
+#	VK_G
+#	VK_H
+#	VK_I
+#	VK_J
+#	VK_K
+#	VK_L
+#	VK_M
+#	VK_N
+#	VK_O
+#	VK_P
+#	VK_Q
+#	VK_R
+#	VK_S
+#	VK_T
+#	VK_U
+#	VK_V
+#	VK_W
+#	VK_X
+#	VK_Y
+#	VK_Z
+#	LWIN
+#	RWIN
+#	APPS
+#	SLEEP
+#	NUMPAD0
+#	NUMPAD1
+#	NUMPAD2
+#	NUMPAD3
+#	NUMPAD4
+#	NUMPAD5
+#	NUMPAD6
+#	NUMPAD7
+#	NUMPAD8
+#	NUMPAD9
+#	MULTIPLY
+#	ADD
+#	SEPARATOR
+#	SUBTRACT
+#	DECIMAL
+#	DIVIDE
+#	F1
+#	F2
+#	F3
+#	F4
+#	F5
+#	F6
+#	F7
+#	F8
+#	F9
+#	F10
+#	F11
+#	F12
+#	F13
+#	F14
+#	F15
+#	F16
+#	F17
+#	F18
+#	F19
+#	F20
+#	F21
+#	F22
+#	F23
+#	F24
+#	NUMLOCK
+#	SCROLL
+#	LSHIFT
+#	RSHIFT
+#	LCONTROL
+#	RCONTROL
+#	LMENU
+#	RMENU
+#	BROWSER_BACK
+#	BROWSER_FORWARD
+#	BROWSER_REFRESH
+#	BROWSER_STOP
+#	BROWSER_SEARCH
+#	BROWSER_FAVORITES
+#	BROWSER_HOME
+#	VOLUME_MUTE
+#	VOLUME_DOWN
+#	VOLUME_UP
+#	MEDIA_NEXT_TRACK
+#	MEDIA_PREV_TRACK
+#	MEDIA_STOP
+#	MEDIA_PLAY_PAUSE
+#	LAUNCH_MAIL
+#	LAUNCH_MEDIA_SELECT
+#	LAUNCH_APP1
+#	LAUNCH_APP2
+#	OEM_1
+#	OEM_PLUS
+#	OEM_COMMA
+#	OEM_MINUS
+#	OEM_PERIOD
+#	OEM_2
+#	OEM_3
+#	OEM_4
+#	OEM_5
+#	OEM_6
+#	OEM_7
+#	OEM_8
+#	OEM_102
+#	PROCESSKEY
+#	PACKET
+#	ATTN
+#	CRSEL
+#	EXSEL
+#	EREOF
+#	PLAY
+#	ZOOM
+#	NONAME
+#	PA1
+#	OEM_CLEAR
+#	VK_NULL
+
