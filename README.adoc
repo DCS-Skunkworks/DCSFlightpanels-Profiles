@@ -13,9 +13,10 @@ Planes included:
 * C-101CC / EB
 * Christen Eagle II
 * F-14B
+* F-16C 50
+* F5-E 
 * F-86 Sabre
 * F/A-18C
-* F5-E 
 * FC3 (F-15)+SRS - (optimized for F-15 works with all FC3) DCS-SimpleRadioStandalone
 * Ka50
 * L-39C
@@ -30,7 +31,7 @@ Planes included:
 * UH1-H
 
 Contributors: BlackLibrary(aka WarLord), pdmarsh, Capt Zeen, BaD CrC, ron533, lizelong952, VirusAM, jusola,
-              emcek, Valrond, Saylors, PEEP, Fallen_Tyrael, Maclaw, Bazmus
+              emcek, Valrond, Saylors, PEEP, Fallen_Tyrael, Maclaw, Bazmus, Maverick38, Mutex
 
 == Instruction
 
