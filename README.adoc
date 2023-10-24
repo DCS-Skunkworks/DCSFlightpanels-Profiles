@@ -3,55 +3,27 @@ ifndef::env-github[{set:link-ext:html}]
 
 == DCS-FlighPanel-Profiles
 
-Collection of Profiles for Flightpanels (DCS WORLD)
+Collection of DCS WORLD Profiles for DCSFlightpanels
 
-Planes included:
+== Instructions
 
-* A-10C
-* AJS37
-* AV8BNA
-* C-101CC / EB
-* Christen Eagle II
-* F-14B
-* F-16C 50
-* F5-E 
-* F-86 Sabre
-* F/A-18C
-* FC3 (F-15)+SRS - (optimized for F-15 works with all FC3) DCS-SimpleRadioStandalone
-* Ka50
-* L-39C
-* L-39ZA
-* M-2000C
-* Mi8
-* Mig-21Bis
-* P-47D
-* P-51D / TF-51
-* SA342M
-* Spitfire
-* UH1-H
-
-Contributors: BlackLibrary(aka WarLord), pdmarsh, Capt Zeen, BaD CrC, ron533, lizelong952, VirusAM, jusola,
-              emcek, Valrond, Saylors, PEEP, Fallen_Tyrael, Maclaw, Bazmus, Maverick38, Mutex
-
-== Instruction
-
-Put these files in a Folder and open it in DCS-Flightpanels.
+Put these files in a Folder and open it in DCSFlightpanels.
 
 Before use, open the files with a text editor and change PanelInstanceID= to your IDs
 
-1. open DCSFlightpanels.exe
+1. start dcsfp.exe
 2. open a profile and close the announcement (The XXX Panel with ID xyzxyzxyz cannot found)
 3. execute the ID button to copy the id no. to clipboard
-4. open the profile of the bindings with Editor (NOTEPAD, Notepad++,...) where is installed (Flight Panel XYZ.bindings)
-5.paste the contents of the clipboard to here :
+4. open the profile (*.bindings file) in Notepad, Notepad++,...
+5. paste the contents of the clipboard to here :
 PanelInstanceID=\\?\xyzxyzxyzxyzxyzxyzxyzxyzxyzxyzxyzxyzxyzxyzxy
-6. that will change the ID of the USB address that you plugged the Panel and should work now!
+6. that will change the ID of the USB address for the panel to that of your panel
 
 == Support
 
 * If you have some Profiles to share please contact me (WarLord) on our Discord Server
 * Here you find our https://discord.gg/5svGwKX[DCSFlightpanels Discord Server]
-* Here you find the https://github.com/DCSFlightpanels/DCSFlightpanels[DCSFlightPanels]
-* Here you find the https://github.com/DCSFlightpanels/dcs-bios[DCS-BIOS]
+* Here you find the https://github.com/DCSSkunkworks/DCSFlightpanels[DCSFlightPanels]
+* Here you find the https://github.com/DCSSkunkworks/dcs-bios[DCS-BIOS]
 * Here you find the https://github.com/ciribob/DCS-SimpleRadioStandalone[DCS-SimpleRadioStandalone]
 * If you want to support us: https://www.paypal.me/jerkerdahlblom[Here you can Donate.] 
